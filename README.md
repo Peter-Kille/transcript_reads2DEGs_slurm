@@ -1,0 +1,45 @@
+# RNASeq analysis from Reads to DEGs
+A SLURM pipeline designed for illumina data using (star)[https://github.com/alexdobin/STAR/tree/master] mapping algorithum, (subread)[https://subread.sourceforge.net/] and to generate feature counts and [SARTools](https://github.com/PF2-pasteur-fr/SARTools) for DEG geneartion. The processes includes quality assessment, pre-processing, kraken, bracken, metaphylan with alpha diversity metrics being calculated and krona plots being generated. This pipeline is optimised explicitly for deployment on high-performance computing (HPC) clusters and executed _via_ Slurm Workload Manager.
+
+## Key Features
+
+- **Read Quality Assessment**: Ensures high-quality data processing with integrated quality checks.
+- **Library indexing and Mapping**: Star.
+- **Indentification of duplicates markup/removal files **: Picard.
+- **FeatureCount generation**: Subread - note by default this is configured for eukaryotes and exon based annotations.
+- **Generation of DEGs**: Generates DEGs using SARTools pipeline and saving of DESeq2 object
+
+
+## Installation
+
+1. Install the metagenome_slurm resources into your HPC cluster directory in which you will be performing the assembly:  
+
+```
+git clone git@github.com:Peter-Kille/transcript_reads2DEGs_slurm.git
+```
+
+2. Put the raw reads in `raw_data` folder.  
+
+3. Run the pipeline using `./deploy.sh -p [slurm queue / partition] -n [unique name for run]`  
+
+4. you can you './deploy.sh -h' for help (see below)
+
+## Available displayed arguments:
+```
+./deploy.sh -h
+
+Usage: ./deploy.sh --name NAME [--env ENV] [--partition PARTITION]
+
+Options:
+  -n, --name          REQUIRED: Run name or deployment name - should be unique
+  -w, --work          Optional: working dir - default is current dir /work/
+  -p, --partition     Optional: Avalible partition / hpc queue (epyc, defq, jumbo, epyc_ssd)
+  -h, --help          Show this help message
+
+```
+ **Note:**
+- You can run the pipeline multiple times simultaneously with different raw reads, simply repeat the installation process in a different directory and `./deploy` with a different run names identifier name.
+- You can manually reconfigure slurm parameters as per your HPC system (e.g memory, CPUs) by going through indivudal scripts in `modules` directory.
+- All the relevent outputs will be stored in `outdir` folder, and outputs for every individual steps in the pipeline can be found in `workdir`.
+
+Prof Peter Kille - kille@cardiff.cf.ac.uk
