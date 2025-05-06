@@ -5,7 +5,9 @@
 NAME=""
 PART=""
 workdir=$(pwd)/work
-krakendb="k2_standard_08gb_20250402"
+metadata=""
+genome=""
+annot=""
 
 # Allowed environments
 VALID_PART=("epyc" "defq" "jumbo" "epyc_ssd" "epyc -w f02-14")
@@ -24,15 +26,17 @@ print_help() {
   echo ""
   echo "Options:"
   echo "  -n, --name          REQUIRED: Run name or deployment name - should be unique"
-  echo "  -w, --work          Optional: working dir - default is current dir /work/"
   echo "  -p, --partition     REQUIRED: Avalible partition / hpc queue (epyc, defq, jumbo, epyc_ssd)"
-  echo "  -k, --krakendb      Optional: Krakendb - default is k2_standard_08gb_20250402"
+  echo "  -m, --metadata      REQUIRED: metadata file, tsv col=sample name, col2=read1, col3=read2"
+  echo "  -g, --genome        REQUIRED: genome - should be fasta file - uncompressed"
+  echo "  -a, --annot         REQUIRED: annotation file gtf format file - uncompressed"
+  echo "  -w, --work          Optional: working dir - default is current dir /work/"
   echo "  -h, --help          Show this help message"
   exit 0
 }
 
 # Use `getopt` to parse options
-PARSED=$(getopt -o n:w:p:k:h --long name:,env:,port:,help -- "$@")
+PARSED=$(getopt -o n:p:m:g:a:w:h --long name:,partition:,metdata:,genome:,annot:,work:,help -- "$@")
 if [[ $? -ne 0 ]]; then
   echo "Failed to parse options." >&2
   exit 1
@@ -47,7 +51,9 @@ while true; do
     -n|--name) NAME="$2"; shift 2 ;;
     -w|--work)  workdir="$2"; shift 2 ;;
     -p|--partition) PART="$2"; shift 2 ;;
-    -k|--krakendb) krakendb="$2"; shift 2 ;;
+    -m|--metadata) metadata="$2"; shift 2 ;;
+    -g|--genome) genome="$2"; shift 2 ;;
+    -a|--annot) annot="$2"; shift 2 ;;
     -h|--help) print_help ;;
     --) shift; break ;;
     *) echo "Unexpected option: $1" >&2; exit 1 ;;
@@ -68,6 +74,27 @@ if [[ -z "$PART" ]]; then
   exit 1
 fi
 
+# Check if partition is set (required)
+if [[ -z "$metadata" ]]; then
+  echo "Error: --metadata file is required - define your metadata."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+# Check if genome is set (required)
+if [[ -z "$genome" ]]; then
+  echo "Error: --genome file is required - define your genome."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+# Check if annotation file is set (required)
+if [[ -z "$annot" ]]; then
+  echo "Error: --annot file is required - define your gft annotation."
+  echo "Use --help for usage."
+  exit 1
+fi
+
 # Validate partition if provided
 if [[ -n "$PART" ]] && ! validate_partition "$PART"; then
   echo "Error: Invalid parition '$PART'."
@@ -79,10 +106,14 @@ fi
 echo "Run name (unique): ${NAME}"
 echo "Partition: ${PART}"
 echo "Working directory: ${workdir}"
-echo "Kraken database: ${krakendb}" 
+echo "Metadata file: ${metadata}"
+echo "Genome file: ${genome}"
+echo "Annotation file: ${annot}"
 
 #export arguements
 export NAME
 export PART
 export workdir
-export krakendb
+export metadata
+export genome
+export annot

@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	L3_Cd_0_rep1_1	/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep1_1_fastqc.zip
+FastQC	all_sections	L3_Cd_20_rep2_1	/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep2_1_fastqc.zip
+FastQC	all_sections	L3_Cd_0_rep2_1	/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep2_1_fastqc.zip
+FastQC	all_sections	L3_Cd_20_rep1_1	/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep1_1_fastqc.zip
+FastQC	all_sections	L3_Cd_0_rep3_1	/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep3_1_fastqc.zip
+FastQC	all_sections	L3_Cd_20_rep3_1	/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep3_1_fastqc.zip

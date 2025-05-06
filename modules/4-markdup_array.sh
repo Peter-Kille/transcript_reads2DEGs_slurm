@@ -1,15 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=RNAseq
-#SBATCH --partition=defq       # the requested queue
 #SBATCH --nodes=1              # number of nodes to use
 #SBATCH --tasks-per-node=1     #
 #SBATCH --cpus-per-task=8      #
 #SBATCH --mem-per-cpu=2000     # in megabytes, unless unit explicitly stated
-#SBATCH --error=%J.err         # redirect stderr to this file
-#SBATCH --output=%J.out        # redirect stdout to this file
-##SBATCH --mail-user=[insert email address]@Cardiff.ac.uk  # email address used for event notification
-##SBATCH --mail-type=end                                   # email on job end
-##SBATCH --mail-type=fail                                  # email on job failure
 
 echo "Some Usable Environment Variables:"
 echo "================================="
@@ -25,24 +18,11 @@ echo \$SLURM_MEM_PER_CPU=${SLURM_MEM_PER_CPU}
 cat $0
 
 #load some modules
-module load picard/3.0.0-cnu7rdq
-module load samtools/1.19.2-m76oqh7
+module load ${picard_module}
+module load ${samtools_module}
 
-## Useful shortcuts
-workdir=$(pwd)
-
-rawdir=${workdir}/rawdata
-trimdir=${workdir}/trimdata
-stardir=${workdir}/star
-genomedir=${workdir}/genome
-mkdir ${workdir}/markdup
-markdir=${workdir}/markdup
-
-
-for f in ${workdir}/rawdata/*_R1.fastq.gz
-do
-R1=$(basename $f | cut -f1 -d.)
-base=$(echo $R1 | sed 's/_R1//')
+sample_array=($samples)
+base=${sample_array[$SLURM_ARRAY_TASK_ID]}
 
 samtools sort -@ ${SLURM_CPUS_PER_TASK} -o $stardir/${base}.sorted.bam $stardir/${base}-unsort.Aligned.out.bam
 samtools index $stardir/${base}.sorted.bam
@@ -50,9 +30,6 @@ samtools index $stardir/${base}.sorted.bam
 ##  MARK DUPLICATES  ##
 picard MarkDuplicates I=$stardir/${base}.sorted.bam O=$markdir/${base}.markdup.bam M=$markdir/${base}.metrics.markdup.txt REMOVE_DUPLICATES=false VALIDATION_STRINGENCY=SILENT
 
-
-
 ## REMOVE DUPLICATES ##
 picard MarkDuplicates I=${stardir}/${base}.sorted.bam O=${markdir}/${base}.rmdup.bam M=${markdir}/${base}.metrics.rmdup.txt REMOVE_DUPLICATES=true VALIDATION_STRINGENCY=SILENT
 
-done

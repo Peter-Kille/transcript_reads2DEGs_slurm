@@ -1,15 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=RNAseq
-#SBATCH --partition=defq       # the requested queue
 #SBATCH --nodes=1              # number of nodes to use
 #SBATCH --tasks-per-node=1     #
 #SBATCH --cpus-per-task=8      #   
 #SBATCH --mem-per-cpu=2000     # in megabytes, unless unit explicitly stated
-#SBATCH --error=%J.err         # redirect stderr to this file
-#SBATCH --output=%J.out        # redirect stdout to this file
-##SBATCH --mail-user=[insert email address]@Cardiff.ac.uk  # email address used for event notification
-##SBATCH --mail-type=end                                   # email on job end
-##SBATCH --mail-type=fail                                  # email on job failure
 
 echo "Some Usable Environment Variables:"
 echo "================================="
@@ -25,22 +18,10 @@ echo \$SLURM_MEM_PER_CPU=${SLURM_MEM_PER_CPU}
 cat $0
 
 ## Load some Modules
-module load STAR/2.7.6a
+module load ${star_module}
 
-## Useful shortcuts
-#varibles
-workdir=$(pwd)
-
-rawdir=${workdir}/rawdata
-trimdir=${workdir}/trimdata
-mkdir ${workdir}/star
-stardir=${workdir}/star
-genomedir=${workdir}/genome
-
-for f in ${workdir}/rawdata/*_R1.fastq.gz
-do
-R1=$(basename $f | cut -f1 -d.)
-base=$(echo $R1 | sed 's/_R1//')
+sample_array=($samples)
+base=${sample_array[$SLURM_ARRAY_TASK_ID]}
 
 # map forward and reverse reads to genome
 STAR   --outMultimapperOrder Random \
@@ -52,7 +33,5 @@ STAR   --outMultimapperOrder Random \
        --readFilesCommand zcat \
        --outFileNamePrefix ${stardir}/${base}-unsort. \
        --genomeDir ${genomedir} \
-       --readFilesIn ${trimdir}/${base}_trim_R1.fastq.gz ${trimdir}/${base}_trim_R2.fastq.gz
-
-done       
+       --readFilesIn ${trimdir}/${base}_trim_1.fastq.gz ${trimdir}/${base}_trim_2.fastq.gz
 

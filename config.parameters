@@ -6,6 +6,7 @@ pipedir=$(pwd -P)
 
 moduledir="${pipedir}/modules"
 scriptdir="${moduledir}/scripts"
+sourcedir="${pipedir}/source_data"
 
 ## Make workdir and output directories
 outdir="${pipedir}/outdir"
@@ -45,18 +46,17 @@ export workdir
 export outdir
 export moduledir
 export log
-export sample_number
 export singularitydir
 export scriptdir
 
 # Step 1: Rename and Count
-rawdir="${pipedir}/raw_data"
+rawdir="${workdir}/raw_data"
 if [[ ! -d "${rawdir}" ]]; then 
 	mkdir -p "${rawdir}" 
 fi
 export rawdir
 
-# STEP 2: fastqc on raw data
+# STEP 2A: fastqc on raw data
 qcdir="${workdir}/rawqc" 
 if [[ ! -d "${qcdir}" ]]; then 
 	mkdir -p "${qcdir}" 
@@ -66,17 +66,17 @@ module is-avail ${fastqc_module} || { echo "${fastqc_module} not avalible check 
 export fastqc_module
 export qcdir
 
-# STEP 3:
-trimdir="${workdir}/trim_files" 
-if [[ ! -d "${trimdir}" ]]; then 
-	mkdir -p "${trimdir}" 
+#2B fastp trim
+trimdir="${workdir}/trim_files"
+if [[ ! -d "${trimdir}" ]]; then
+        mkdir -p "${trimdir}"
 fi
 fastp_module="fastp/v0.20"
 module is-avail ${fastp_module} || { echo "${fastp_module} not avalible check config.parameters_all file" ; exit 1; }
 export fastp_module
 export trimdir
 
-#STEP 4:
+#STEP 2C: qc trim reads
 trimqc="${workdir}/trimqc"
 if [[ ! -d "${trimqc}" ]]; then
         mkdir -p "${trimqc}"
@@ -86,86 +86,48 @@ module is-avail ${fastqc_module} || { echo "${fastqc_module} not avalible check 
 export fastqc_module
 export trimqc
 
-# STEP 5:
-krakendir="${workdir}/kraken"
-if [[ ! -d "${krakendir}" ]]; then
-        mkdir -p "${krakendir}"
+#STEP 3A 3B: star library index and star mapping
+genomedir="${workdir}/genome"
+if [[ ! -d "${genomedir}" ]]; then
+        mkdir -p "${genomedir}"
 fi
 
-krakendbdir="${workdir}/kraken/db"
-if [[ ! -d "${krakendbdir}" ]]; then
-        mkdir -p "${krakendbdir}"
-fi
-kraken_module="kraken2/2.1.1"
-module is-avail ${kraken_module} || { echo "${kraken_module} not avalible check config.parameters_all file" ; exit 1; }
-export kraken_module
-python_module="python/3.7.4"
-module is-avail ${python_module} || { echo "${python_module} not avalible check config.parameters_all file" ; exit 1; }
-export python_module
-export krakendir
-export krakendbdir
-
-# STEP 6:
-brackendir="${workdir}/bracken"
-if [[ ! -d "${brackendir}" ]]; then
-        mkdir -p "${brackendir}"
-fi
-bracken_module="bracken/2.6.0"
-module is-avail ${bracken_module} || { echo "${bracken_module} not avalible check config.parameters_all file" ; exit 1; }
-export bracken_module
-python_module="python/3.7.4"
-module is-avail ${python_module} || { echo "${python_module} not avalible check config.parameters_all file" ; exit 1; }
-export python_module
-read_len=150
-export brackendir
-export read_len
-
-# STEP 7:
-kronadir="${workdir}/krona"
-if [[ ! -d "${kronadir}" ]]; then
-        mkdir -p "${kronadir}"
-fi
-krona_module="krona/2.8"
-module is-avail ${krona_module} || { echo "${krona_module} not avalible check config.parameters_all file" ; exit 1; }
-export krona_module
-python_module="python/3.7.4"
-module is-avail ${python_module} || { echo "${python_module} not avalible check config.parameters_all file" ; exit 1; }
-export python_module
-export kronadir
-
-# STEP 8:
-metaphlandir="${workdir}/metaphlan"
-if [[ ! -d "${metaphlandir}" ]]; then
-        mkdir -p "${metaphlandir}"
+stardir="${workdir}/star"
+if [[ ! -d "${stardir}" ]]; then
+        mkdir -p "${stardir}"
 fi
 
-metaphlandbdir="${workdir}/metaphlan/db"
-if [[ ! -d "${metaphlandbdir}" ]]; then
-        mkdir -p "${metaphlandbdir}"
+star_module="STAR/2.7.6a"
+module is-avail ${star_module} || { echo "${star_module} not avalible check config.parameters_all file" ; exit 1; }
+export star_module
+export stardir
+export genomedir
+export len=149
+
+#STEP 4: markdups
+markdir="${workdir}/markdups"
+if [[ ! -d "${markdir}" ]]; then
+        mkdir -p "${markdir}"
 fi
-metaphlan_module="py-metaphlan/4.1.1-w27j3rs"
-module is-avail ${metaphlan_module} || { echo "${metaphlan_module} not avalible check config.parameters_all file" ; exit 1; }
-export metaphlan_module
 
-r_module="r/4.4.1-gny4cpr"
-module is-avail ${r_module} || { echo "${r_module} not avalible check config.parameters_all file" ; exit 1; }
-export r_module
+picard_module="picard/3.0.0-cnu7rdq"
+module is-avail ${picard_module} || { echo "${picard_module} not avalible check config.parameters_all file" ; exit 1; }
+samtools_module="samtools/1.19.2-m76oqh7"
+module is-avail ${samtools_module} || { echo "${samtools_module} not avalible check config.parameters_all file" ; exit 1; }
+export picard_module
+export samtools_module
+export markdir
 
-export metaphlandir
-export metaphlandbdir
-
-# STEP 7:
-kronadir="${workdir}/krona"
-if [[ ! -d "${kronadir}" ]]; then
-        mkdir -p "${kronadir}"
+#STEP 5: feature count
+fcdir="${workdir}/featurecounts"
+if [[ ! -d "${fcdir}" ]]; then
+        mkdir -p "${fcdir}"
 fi
-krona_module="krona/2.8"
-module is-avail ${krona_module} || { echo "${krona_module} not avalible check config.parameters_all file" ; exit 1; }
-export krona_module
-qiime_module="qiime2/2023.5"
-module is-avail ${qiime_module} || { echo "${qiime_module} not avalible check config.parameters_all file" ; exit 1; }
-export qiime_module
-export kronadir
+
+subread_module="subread/2.0.6-abbqxcc"
+module is-avail ${subread_module} || { echo "${subread_module} not avalible check config.parameters_all file" ; exit 1; }
+export subread_module
+export fcdir
 
 # STEP X:
 multiqcdir="${workdir}/multiqc"
