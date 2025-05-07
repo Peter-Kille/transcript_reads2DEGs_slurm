@@ -8,9 +8,11 @@ workdir=$(pwd)/work
 metadata=""
 genome=""
 annot=""
+treatment=""
+ref=""
 
 # Allowed environments
-VALID_PART=("epyc" "defq" "jumbo" "epyc_ssd" "epyc -w f02-14")
+VALID_PART=("epyc" "defq" "epyc_ssd" "epyc -w f02-14" "epyc -w f02-13")
 
 # Validate partition
 validate_partition() {
@@ -30,13 +32,15 @@ print_help() {
   echo "  -m, --metadata      REQUIRED: metadata file, tsv col=sample name, col2=read1, col3=read2"
   echo "  -g, --genome        REQUIRED: genome - should be fasta file - uncompressed"
   echo "  -a, --annot         REQUIRED: annotation file gtf format file - uncompressed"
+  echo "  -t, --treatment     REQUIRED: treatment for which to derive DEGs"
+  echo "  -r, --ref           REQUIRED: reference condition"
   echo "  -w, --work          Optional: working dir - default is current dir /work/"
   echo "  -h, --help          Show this help message"
   exit 0
 }
 
 # Use `getopt` to parse options
-PARSED=$(getopt -o n:p:m:g:a:w:h --long name:,partition:,metdata:,genome:,annot:,work:,help -- "$@")
+PARSED=$(getopt -o n:p:m:g:a:t:r:w:h --long name:,partition:,metdata:,genome:,annot:,treatment:,ref:,work:,help -- "$@")
 if [[ $? -ne 0 ]]; then
   echo "Failed to parse options." >&2
   exit 1
@@ -53,6 +57,8 @@ while true; do
     -p|--partition) PART="$2"; shift 2 ;;
     -m|--metadata) metadata="$2"; shift 2 ;;
     -g|--genome) genome="$2"; shift 2 ;;
+    -t|--treatment) treatment="$2"; shift 2 ;;
+    -r|--ref) ref="$2"; shift 2 ;;
     -a|--annot) annot="$2"; shift 2 ;;
     -h|--help) print_help ;;
     --) shift; break ;;
@@ -62,35 +68,49 @@ done
 
 # Check if name is set (required)
 if [[ -z "$NAME" ]]; then
-  echo "Error: --name is required - unque run name."
+  echo "Error: -n --name is required - unque run name."
   echo "Use --help for usage."
   exit 1
 fi
 
 # Check if partition is set (required)
 if [[ -z "$PART" ]]; then
-  echo "Error: --partition is required - define the partition / hpc queue."
+  echo "Error: -p --partition is required - define the partition / hpc queue."
   echo "Use --help for usage."
   exit 1
 fi
 
 # Check if partition is set (required)
 if [[ -z "$metadata" ]]; then
-  echo "Error: --metadata file is required - define your metadata."
+  echo "Error: -m --metadata file is required - define your metadata."
   echo "Use --help for usage."
   exit 1
 fi
 
 # Check if genome is set (required)
 if [[ -z "$genome" ]]; then
-  echo "Error: --genome file is required - define your genome."
+  echo "Error: -g --genome file is required - define your genome."
   echo "Use --help for usage."
   exit 1
 fi
 
 # Check if annotation file is set (required)
 if [[ -z "$annot" ]]; then
-  echo "Error: --annot file is required - define your gft annotation."
+  echo "Error: -a --annot file is required - define your gft annotation."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+# Check if treatment is set (required)
+if [[ -z "$treatment" ]]; then
+  echo "Error: -t --treatment file is required - define your treatment for DEG analsyis."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+# Check if ref is set (required)
+if [[ -z "$annot" ]]; then
+  echo "Error: -r --ref file is required - define your reference condition."
   echo "Use --help for usage."
   exit 1
 fi
@@ -109,6 +129,8 @@ echo "Working directory: ${workdir}"
 echo "Metadata file: ${metadata}"
 echo "Genome file: ${genome}"
 echo "Annotation file: ${annot}"
+echo "Treatment for analysis: ${treatment}"
+echo "Reference condition: ${ref}"
 
 #export arguements
 export NAME
@@ -117,3 +139,5 @@ export workdir
 export metadata
 export genome
 export annot
+export treatment
+export ref

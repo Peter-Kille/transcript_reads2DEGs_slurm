@@ -1,7 +1,0 @@
-Sample_ID	read1	read2	SRA	Stage	Chemical	Dose	StageDose	Replicate
-L3_Cd_0_rep1	SRR12478185_1.fastq.gz	SRR12478185_2.fastq.gz	SRR12478185	L3	Cd	0	L3dose0	rep1
-L3_Cd_0_rep2	SRR12478186_1.fastq.gz	SRR12478186_2.fastq.gz	SRR12478186	L3	Cd	0	L3dose0	rep2
-L3_Cd_0_rep3	SRR12478187_1.fastq.gz	SRR12478187_2.fastq.gz	SRR12478187	L3	Cd	0	L3dose0	rep3
-L3_Cd_20_rep1	SRR12478191_1.fastq.gz	SRR12478191_2.fastq.gz	SRR12478191	L3	Cd	20	L3dose20	rep1
-L3_Cd_20_rep2	SRR12478192_1.fastq.gz	SRR12478192_2.fastq.gz	SRR12478192	L3	Cd	20	L3dose20	rep2
-L3_Cd_20_rep3	SRR12478193_1.fastq.gz	SRR12478193_2.fastq.gz	SRR12478193	L3	Cd	20	L3dose20	rep3

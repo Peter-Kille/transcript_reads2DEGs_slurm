@@ -129,6 +129,18 @@ module is-avail ${subread_module} || { echo "${subread_module} not avalible chec
 export subread_module
 export fcdir
 
+#STEP 6: SARTools
+rdir="${workdir}/deseq2"
+if [[ ! -d "${rdir}" ]]; then
+        mkdir -p "${rdir}"
+fi
+
+r_module="R/4.4.3"
+module is-avail ${r_module} || { echo "${r_module} not avalible check config.parameters_all file" ; exit 1; }
+export r_module
+export rdir
+export R_LIBS=${pipedir}/R_Libs/
+
 # STEP X:
 multiqcdir="${workdir}/multiqc"
 if [[ ! -d "${multiqcdir}" ]]; then

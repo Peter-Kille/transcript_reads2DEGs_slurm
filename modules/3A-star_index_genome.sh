@@ -20,14 +20,14 @@ cat $0
 # Load some modules
 module load ${star_module}
 
-cp ${pipedir}/genome/* ${genomedir}/*
+cp ${pipedir}/genome/* ${genomedir}/
 
 ## Change --sjdbOverhang to length of your sequence data (one read of your paired data) minus 1
 
 STAR 	--runThreadN ${SLURM_CPUS_PER_TASK} \
         --limitGenomeGenerateRAM 128000000000 \
 	--runMode genomeGenerate \
-	--genomeDir  ${workdir}/genome \
-	--genomeFastaFiles ${workdir}/genome/${genome} \
-	--sjdbGTFfile ${workdir}/genome/${annot} \
+	--genomeDir  ${genomedir} \
+	--genomeFastaFiles ${genomedir}/${genome} \
+	--sjdbGTFfile ${genomedir}/${annot} \
 	--sjdbOverhang ${len}

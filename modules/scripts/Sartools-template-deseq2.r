@@ -1,37 +1,38 @@
+#!/usr/bin/env Rscript
+
+pipedir<-Sys.getenv("pipedir")
+
+install.packages("devtools", repos = "https://cloud.r-project.org/")
+
+devtools::install_github("PF2-pasteur-fr/SARTools", build_opts="--no-resave-data")
+
+
 ################################################################################
 ### R script to compare several conditions with the SARTools and DESeq2 packages
 ### Hugo Varet
-### November 28th, 2019
-### designed to be executed with SARTools 1.7.3
-#################################################################################
-# Only the first time ever to install
-#install.packages("devtools")
-#library(devtools) 
-#devtools::install_github("PF2-pasteur-fr/SARTools", build_opts="--no-resave-data")
-
-library(SARTools)
-library(dplyr)
+### March 23rd, 2022
+### designed to be executed with SARTools 1.8.1
+################################################################################
 
 ################################################################################
 ###                parameters: to be modified by the user                    ###
 ################################################################################
 rm(list=ls())                                        # remove all the objects from the R session
 
-workDir <- "~/mydata/Session5/"      # *** working directory for the R session
+workDir <- Sys.getenv("rdir")      # working directory for the R session
 
-projectName <- "C_elegans_L3Cd"                         # *** name of the project
-author <- "your name"                                # *** author of the statistical analysis/report
+projectName <- Sys.getenv("NAME")                         # name of the project
+author <- "Pipeline_run"                                # author of the statistical analysis/report
 
-targetFile <- "C_elegansL3_Cd_metadata.txt"                           # *** path to the design/target file
-rawDir <- "featureCounts"                                      # *** path to the directory containing raw counts files
-
-varInt <- "StageDose"                                    # *** factor of interest
-condRef <- "L3dose0"                                      # *** reference biological condition
-batch <- NULL                                        # blocking factor: NULL (default) or "batch" for example
-
+targetFile <- Sys.getenv("metadata")                           # path to the design/target file
+rawDir <- Sys.getenv("fcdir")                                      # path to the directory containing raw counts files
 featuresToRemove <- c("alignment_not_unique",        # names of the features to be removed
                       "ambiguous", "no_feature",     # (specific HTSeq-count information and rRNA for example)
                       "not_aligned", "too_low_aQual")# NULL if no feature to remove
+
+varInt <- Sys.getenv("treatment")                    # factor of interest
+condRef <- Sys.getenv("ref")                         # reference biological condition
+batch <- NULL                                        # blocking factor: NULL (default) or "batch" for example
 
 fitType <- "parametric"                              # mean-variance relationship: "parametric" (default), "local" or "mean"
 cooksCutoff <- TRUE                                  # TRUE/FALSE to perform the outliers detection (default is TRUE)
@@ -53,6 +54,7 @@ forceCairoGraph <- FALSE
 ###                             running script                               ###
 ################################################################################
 setwd(workDir)
+library(SARTools)
 if (forceCairoGraph) options(bitmapType="cairo")
 
 # checking parameters
@@ -84,9 +86,8 @@ summaryResults <- summarizeResults.DESeq2(out.DESeq2, group=target[,varInt], col
                                           independentFiltering=independentFiltering,
                                           cooksCutoff=cooksCutoff, alpha=alpha)
 
-# save image of the R session. 
-#This will allow you to read it in directly when you come to make heatmaps
-save.image(file=paste0(gsub(" ","",projectName), ".RData"))
+# save image of the R session
+save.image(file=paste0(projectName, ".RData"))
 
 # generating HTML report
 writeReport.DESeq2(target=target, counts=counts, out.DESeq2=out.DESeq2, summaryResults=summaryResults,
