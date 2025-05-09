@@ -135,11 +135,20 @@ if [[ ! -d "${rdir}" ]]; then
         mkdir -p "${rdir}"
 fi
 
+pandoc_dir="${pipedir}/pandoc"
+if [[ ! -d "${pandoc_dir}" ]]; then
+        mkdir -p "${pandoc_dir}"
+fi
+
+curl -LO https://github.com/jgm/pandoc/releases/download/3.6.4/pandoc-3.6.4-linux-amd64.tar.gz
+tar xvzf pandoc-3.6.4-linux-amd64.tar.gz --strip-components 1 -C ${pipeline}/pandoc
+
 r_module="R/4.4.3"
 module is-avail ${r_module} || { echo "${r_module} not avalible check config.parameters_all file" ; exit 1; }
 export r_module
 export rdir
-export R_LIBS=${pipedir}/R_Libs/
+export R_LIBS=${pipedir}/R_Libs_devel/
+export PATH=${PATH}:${pipedir}/pandoc/bin/
 
 # STEP X:
 multiqcdir="${workdir}/multiqc"

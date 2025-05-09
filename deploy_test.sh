@@ -35,11 +35,11 @@ fi
 # INPUT: rawdir
 # WORK: qcdir
 # OUTPUT: null
-sbatch -d singleton --error="${log}/2A-rawqc_%J.err" --output="${log}/2A-rawqc_%J.out" --array="0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/2A-fastqc_array.sh"
+#sbatch -d singleton --error="${log}/2A-rawqc_%J.err" --output="${log}/2A-rawqc_%J.out" --array="0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/2A-fastqc_array.sh"
 
-sbatch -d singleton --error="${log}/2B-fastp_%J.err" --output="${log}/2B-fastp_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/2B-fastp_array.sh"  
+#sbatch -d singleton --error="${log}/2B-fastp_%J.err" --output="${log}/2B-fastp_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/2B-fastp_array.sh"  
 
-sbatch -d singleton --error="${log}/2C-trimqc_%J.err" --output="${log}/2C-trimqc_%J.out" --array="0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/2C-fastqc-trim.sh"
+#sbatch -d singleton --error="${log}/2C-trimqc_%J.err" --output="${log}/2C-trimqc_%J.out" --array="0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/2C-fastqc-trim.sh"
 
 # Step 3: star genome indexing and mapping 
 # DESCRIPTION: genome indexing and mapping
@@ -48,9 +48,9 @@ sbatch -d singleton --error="${log}/2C-trimqc_%J.err" --output="${log}/2C-trimqc
 # WORK: genomedir, stardir
 # OUTPUT: null
 
-sbatch -d singleton --error="${log}/3A-star_index_%J.err" --output="${log}/3A-star_index_%J.out" --job-name=${NAME} --partition=${PART} "${moduledir}/3A-star_index_genome.sh"
+#sbatch -d singleton --error="${log}/3A-star_index_%J.err" --output="${log}/3A-star_index_%J.out" --job-name=${NAME} --partition=${PART} "${moduledir}/3A-star_index_genome.sh"
 
-sbatch -d singleton --error="${log}/3B-star_map_%J.err" --output="${log}/3B-star_map_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/3B-star_mapping_array.sh"
+#sbatch -d singleton --error="${log}/3B-star_map_%J.err" --output="${log}/3B-star_map_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/3B-star_mapping_array.sh"
 
 # Step 4: Mark duplicates
 # DESCRIPTION: Mark Duplicates
@@ -59,7 +59,7 @@ sbatch -d singleton --error="${log}/3B-star_map_%J.err" --output="${log}/3B-star
 # WORK: trimdir, markdir
 # OUTPUT: null
 
-sbatch -d singleton --error="${log}/4-markdup_%J.err" --output="${log}/4-markdup_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/4-markdup_array.sh"
+#sbatch -d singleton --error="${log}/4-markdup_%J.err" --output="${log}/4-markdup_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/4-markdup_array.sh"
 
 # Step 5: featurecount
 # DESCRIPTION: feature count with subread
@@ -68,7 +68,7 @@ sbatch -d singleton --error="${log}/4-markdup_%J.err" --output="${log}/4-markdup
 # WORK: markdir, fcdir 
 # OUTPUT: featurecounts
 
-sbatch -d singleton --error="${log}/5-featurecount_%J.err" --output="${log}/5-featurecount_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/5-featurecount_array.sh"
+#sbatch -d singleton --error="${log}/5-featurecount_%J.err" --output="${log}/5-featurecount_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/5-featurecount_array.sh"
 
 # Step 6: SARTools
 # DESCRIPTION: DEG analysis with SARTools
@@ -77,7 +77,7 @@ sbatch -d singleton --error="${log}/5-featurecount_%J.err" --output="${log}/5-fe
 # WORK: markdir, fcdi
 # OUTPUT: SARTools tables and figures, html
 
-sbatch -d singleton --error="${log}/6-sartools_%J.err" --output="${log}/6-sartools_%J.out" --job-name=${NAME} --partition=${PART} "${moduledir}/6-SARTools.sh"
+sbatch -d singleton --error="${log}/6-sartools_%J.err" --output="${log}/6-sartools_%J.out" --job-name=${NAME} --partition=${PART} "${moduledir}/6-SARTools-dev.sh"
 
 # Step X: MultiQC report
 # -- Generate a MultiQC report to summarize the results of all previous steps.

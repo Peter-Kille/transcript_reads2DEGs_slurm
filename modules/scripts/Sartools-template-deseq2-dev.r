@@ -4,8 +4,7 @@ pipedir<-Sys.getenv("pipedir")
 
 install.packages("devtools", repos = "https://cloud.r-project.org/")
 
-devtools::install_github("PF2-pasteur-fr/SARTools", build_opts="--no-resave-data")
-
+devtools::install_github("PF2-pasteur-fr/SARTools@development", build_opts="--no-resave-data")
 
 ################################################################################
 ### R script to compare several conditions with the SARTools and DESeq2 packages

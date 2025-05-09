@@ -1,0 +1,7 @@
+genome/
+outdir/
+R_Libs/
+singularities/
+source_data/
+work/
+pandoc/

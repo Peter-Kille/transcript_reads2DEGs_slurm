@@ -3,6 +3,7 @@
 #SBATCH --tasks-per-node=1     #
 #SBATCH --cpus-per-task=4      #   
 #SBATCH --mem-per-cpu=4000     # in megabytes, unless unit explicitly stated
+#SBATCH --time=10:00:00
 
 echo "Some Usable Environment Variables:"
 echo "================================="

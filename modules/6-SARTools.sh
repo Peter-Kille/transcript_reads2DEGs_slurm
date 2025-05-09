@@ -3,6 +3,7 @@
 #SBATCH --tasks-per-node=1     #
 #SBATCH --cpus-per-task=8      #
 #SBATCH --mem-per-cpu=2000     # in megabytes, unless unit explicitly stated
+#SBATCH --time=10:00:00
 
 echo "Some Usable Environment Variables:"
 echo "================================="
@@ -19,4 +20,4 @@ cat $0
 
 module load ${r_module}
 
-Rscript modules/scripts/Sartools-template-deseq2.r
+Rscript modules/scripts/Sartools-template-deseq2-dev.r
