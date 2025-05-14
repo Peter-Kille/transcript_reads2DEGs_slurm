@@ -31,7 +31,7 @@ git clone git@github.com:Peter-Kille/transcript_reads2DEGs_slurm.git
 Usage: ./deploy.sh -n [NAME] -p [PARTITION] -m [METADATA] -t [TREATMENT] -r [REFERENCE]
 
 Copy your paired end sequence files as .fastq.gz files in the source_data directory. Also
-cpoy a metadata file into the source_data directory.  An example tab deliminated (.tsv)
+copy a metadata file into the source_data directory.  An example tab deliminated (.tsv)
 metadata file is provided.  First column should have sample name, column 2 should be
 full name forward read and third column the reverse read. Column 4 should be your treatment.
 The treatment column should contain refernce term - avoid all symbols or spaces

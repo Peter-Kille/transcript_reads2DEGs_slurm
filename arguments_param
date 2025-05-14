@@ -25,7 +25,7 @@ print_help() {
   echo "Usage: $0 -n [NAME] -p [PARTITION] -m [METADATA] -t [TREATMENT] -r [REFERENCE]"
   echo ""
   echo "Copy your paired end sequence files as .fastq.gz files in the source_data directory. Also"
-  echo "cpoy a metadata file into the source_data directory.  An example tab deliminated (.tsv)"
+  echo "copy a metadata file into the source_data directory.  An example tab deliminated (.tsv)"
   echo "metadata file is provided.  First column should have sample name, column 2 should be"
   echo "full name forward read and third column the reverse read. Column 4 should be your treatment."
   echo "The treatment column should contain refernce term - avoid all symbols or spaces"
