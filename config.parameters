@@ -140,8 +140,8 @@ if [[ ! -d "${pandoc_dir}" ]]; then
         mkdir -p "${pandoc_dir}"
 fi
 
-curl -LO https://github.com/jgm/pandoc/releases/download/3.6.4/pandoc-3.6.4-linux-amd64.tar.gz
-tar xvzf pandoc-3.6.4-linux-amd64.tar.gz --strip-components 1 -C ${pipeline}/pandoc
+curl -LO https://github.com/jgm/pandoc/releases/download/3.6.4/pandoc-3.6.4-linux-amd64.tar.gz -o "${pipedir}/pandoc-3.6.4-linux-amd64.tar.gz"
+tar -xvf ${pipedir}/pandoc-3.6.4-linux-amd64.tar.gz --strip-components=1 -C "${pipedir}/pandoc/"
 
 r_module="R/4.4.3"
 module is-avail ${r_module} || { echo "${r_module} not avalible check config.parameters_all file" ; exit 1; }

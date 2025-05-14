@@ -1,584 +1,36 @@
 {
     "report_data_sources": {
-        "featureCounts": {
-            "all_sections": {
-                "L3_Cd_0_rep1.markdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_0_rep1.markdup.featurecount.summary",
-                "L3_Cd_20_rep2.markdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_20_rep2.markdup.featurecount.summary",
-                "L3_Cd_20_rep3.markdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_20_rep3.markdup.featurecount.summary",
-                "L3_Cd_0_rep3.markdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_0_rep3.markdup.featurecount.summary",
-                "L3_Cd_0_rep2.markdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_0_rep2.markdup.featurecount.summary",
-                "L3_Cd_20_rep1.markdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_20_rep1.markdup.featurecount.summary",
-                "L3_Cd_0_rep1.rmdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_0_rep1.rmdup.featurecount.summary",
-                "L3_Cd_0_rep3.rmdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_0_rep3.rmdup.featurecount.summary",
-                "L3_Cd_0_rep2.rmdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_0_rep2.rmdup.featurecount.summary",
-                "L3_Cd_20_rep2.rmdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_20_rep2.rmdup.featurecount.summary",
-                "L3_Cd_20_rep3.rmdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_20_rep3.rmdup.featurecount.summary",
-                "L3_Cd_20_rep1.rmdup": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/featurecounts/L3_Cd_20_rep1.rmdup.featurecount.summary"
-            }
-        },
-        "Picard": {
-            "DuplicationMetrics": {
-                "L3_Cd_0_rep1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/markdups/L3_Cd_0_rep1.metrics.rmdup.txt",
-                "L3_Cd_20_rep1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/markdups/L3_Cd_20_rep1.metrics.rmdup.txt",
-                "L3_Cd_20_rep2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/markdups/L3_Cd_20_rep2.metrics.rmdup.txt",
-                "L3_Cd_0_rep3": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/markdups/L3_Cd_0_rep3.metrics.rmdup.txt",
-                "L3_Cd_20_rep3": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/markdups/L3_Cd_20_rep3.metrics.rmdup.txt",
-                "L3_Cd_0_rep2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/markdups/L3_Cd_0_rep2.metrics.rmdup.txt"
-            }
-        },
-        "STAR": {
-            "SummaryLog": {
-                "L3_Cd_20_rep3-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_20_rep3-unsort.Log.final.out",
-                "L3_Cd_0_rep1-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_0_rep1-unsort.Log.final.out",
-                "L3_Cd_0_rep2-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_0_rep2-unsort.Log.final.out",
-                "L3_Cd_0_rep3-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_0_rep3-unsort.Log.final.out",
-                "L3_Cd_20_rep1-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_20_rep1-unsort.Log.final.out",
-                "L3_Cd_20_rep2-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_20_rep2-unsort.Log.final.out"
-            },
-            "ReadsPerGene": {
-                "L3_Cd_20_rep3-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_20_rep3-unsort.ReadsPerGene.out.tab",
-                "L3_Cd_0_rep1-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_0_rep1-unsort.ReadsPerGene.out.tab",
-                "L3_Cd_0_rep2-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_0_rep2-unsort.ReadsPerGene.out.tab",
-                "L3_Cd_0_rep3-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_0_rep3-unsort.ReadsPerGene.out.tab",
-                "L3_Cd_20_rep1-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_20_rep1-unsort.ReadsPerGene.out.tab",
-                "L3_Cd_20_rep2-unsort": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/star/L3_Cd_20_rep2-unsort.ReadsPerGene.out.tab"
-            }
-        },
         "FastQC": {
             "all_sections": {
-                "L3_Cd_20_rep3_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep3_2_fastqc.zip",
-                "L3_Cd_0_rep2_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep2_1_fastqc.zip",
-                "L3_Cd_0_rep1_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep1_1_fastqc.zip",
-                "L3_Cd_0_rep3_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep3_1_fastqc.zip",
-                "L3_Cd_0_rep3_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep3_2_fastqc.zip",
-                "L3_Cd_0_rep1_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep1_2_fastqc.zip",
-                "L3_Cd_20_rep2_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep2_2_fastqc.zip",
-                "L3_Cd_20_rep3_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep3_1_fastqc.zip",
-                "L3_Cd_0_rep2_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep2_2_fastqc.zip",
-                "L3_Cd_20_rep2_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep2_1_fastqc.zip",
-                "L3_Cd_20_rep1_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep1_1_fastqc.zip",
-                "L3_Cd_20_rep1_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep1_2_fastqc.zip",
-                "L3_Cd_20_rep2_trim_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep2_trim_1_fastqc.zip",
-                "L3_Cd_20_rep2_trim_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep2_trim_2_fastqc.zip",
-                "L3_Cd_0_rep1_trim_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep1_trim_1_fastqc.zip",
-                "L3_Cd_0_rep1_trim_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep1_trim_2_fastqc.zip",
-                "L3_Cd_0_rep3_trim_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep3_trim_1_fastqc.zip",
-                "L3_Cd_0_rep3_trim_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep3_trim_2_fastqc.zip",
-                "L3_Cd_20_rep1_trim_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep1_trim_1_fastqc.zip",
-                "L3_Cd_20_rep1_trim_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep1_trim_2_fastqc.zip",
-                "L3_Cd_20_rep3_trim_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep3_trim_2_fastqc.zip",
-                "L3_Cd_20_rep3_trim_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep3_trim_1_fastqc.zip",
-                "L3_Cd_0_rep2_trim_1": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep2_trim_1_fastqc.zip",
-                "L3_Cd_0_rep2_trim_2": "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep2_trim_2_fastqc.zip"
+                "L3_Cd_20_rep2_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep2_2_fastqc.zip",
+                "L3_Cd_0_rep3_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep3_1_fastqc.zip",
+                "L3_Cd_20_rep2_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep2_1_fastqc.zip",
+                "L3_Cd_0_rep2_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep2_1_fastqc.zip",
+                "L3_Cd_20_rep3_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep3_1_fastqc.zip",
+                "L3_Cd_0_rep1_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep1_1_fastqc.zip",
+                "L3_Cd_20_rep1_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep1_1_fastqc.zip",
+                "L3_Cd_0_rep3_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep3_2_fastqc.zip",
+                "L3_Cd_20_rep1_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep1_2_fastqc.zip",
+                "L3_Cd_0_rep2_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep2_2_fastqc.zip",
+                "L3_Cd_20_rep3_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_20_rep3_2_fastqc.zip",
+                "L3_Cd_0_rep1_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/rawqc/L3_Cd_0_rep1_2_fastqc.zip",
+                "L3_Cd_20_rep2_trim_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep2_trim_1_fastqc.zip",
+                "L3_Cd_0_rep3_trim_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep3_trim_1_fastqc.zip",
+                "L3_Cd_20_rep1_trim_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep1_trim_1_fastqc.zip",
+                "L3_Cd_0_rep2_trim_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep2_trim_1_fastqc.zip",
+                "L3_Cd_20_rep1_trim_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep1_trim_2_fastqc.zip",
+                "L3_Cd_0_rep3_trim_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep3_trim_2_fastqc.zip",
+                "L3_Cd_20_rep3_trim_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep3_trim_1_fastqc.zip",
+                "L3_Cd_20_rep2_trim_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep2_trim_2_fastqc.zip",
+                "L3_Cd_0_rep1_trim_1": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep1_trim_1_fastqc.zip",
+                "L3_Cd_20_rep3_trim_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_20_rep3_trim_2_fastqc.zip",
+                "L3_Cd_0_rep2_trim_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep2_trim_2_fastqc.zip",
+                "L3_Cd_0_rep1_trim_2": "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm/work/trimqc/L3_Cd_0_rep1_trim_2_fastqc.zip"
             }
         }
     },
     "report_general_stats_data": [
         {
-            "L3_Cd_0_rep1.markdup": {
-                "Total": 9723414,
-                "Assigned": 7465024,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 1996612,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 38430,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 223348,
-                "percent_assigned": 76.77369286137564
-            },
-            "L3_Cd_20_rep2.markdup": {
-                "Total": 9523272,
-                "Assigned": 8828069,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 439190,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 61989,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 194024,
-                "percent_assigned": 92.69995648554405
-            },
-            "L3_Cd_20_rep3.markdup": {
-                "Total": 9733600,
-                "Assigned": 8969696,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 502750,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 61350,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 199804,
-                "percent_assigned": 92.1518862496918
-            },
-            "L3_Cd_0_rep3.markdup": {
-                "Total": 9682624,
-                "Assigned": 8990811,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 426182,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 64473,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 201158,
-                "percent_assigned": 92.85510828469637
-            },
-            "L3_Cd_0_rep2.markdup": {
-                "Total": 9637300,
-                "Assigned": 8866286,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 519136,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 59041,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 192837,
-                "percent_assigned": 91.99968870949333
-            },
-            "L3_Cd_20_rep1.markdup": {
-                "Total": 9637146,
-                "Assigned": 8876322,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 488414,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 65241,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 207169,
-                "percent_assigned": 92.10529756423738
-            },
-            "L3_Cd_0_rep1.rmdup": {
-                "Total": 5964346,
-                "Assigned": 5100668,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 698190,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 36717,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 128771,
-                "percent_assigned": 85.51931762510088
-            },
-            "L3_Cd_0_rep3.rmdup": {
-                "Total": 8265156,
-                "Assigned": 7678569,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 345552,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 61596,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 179439,
-                "percent_assigned": 92.90289257698221
-            },
-            "L3_Cd_0_rep2.rmdup": {
-                "Total": 8188626,
-                "Assigned": 7554012,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 406512,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 56206,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 171896,
-                "percent_assigned": 92.2500551374553
-            },
-            "L3_Cd_20_rep2.rmdup": {
-                "Total": 8136134,
-                "Assigned": 7544494,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 360616,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 58699,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 172325,
-                "percent_assigned": 92.72824169316779
-            },
-            "L3_Cd_20_rep3.rmdup": {
-                "Total": 8209666,
-                "Assigned": 7586848,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 387154,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 58580,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 177084,
-                "percent_assigned": 92.41360123542177
-            },
-            "L3_Cd_20_rep1.rmdup": {
-                "Total": 8259418,
-                "Assigned": 7632022,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 381192,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 62725,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 183479,
-                "percent_assigned": 92.403871556083
-            }
-        },
-        {
-            "L3_Cd_0_rep1": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4861707.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 1879534.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.3866,
-                "ESTIMATED_LIBRARY_SIZE": 4533434.0
-            },
-            "L3_Cd_20_rep1": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4818573.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 688864.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.14296,
-                "ESTIMATED_LIBRARY_SIZE": 15205161.0
-            },
-            "L3_Cd_20_rep2": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4761636.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 693569.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.145658,
-                "ESTIMATED_LIBRARY_SIZE": 14716230.0
-            },
-            "L3_Cd_0_rep3": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4841312.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 708734.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.146393,
-                "ESTIMATED_LIBRARY_SIZE": 14878774.0
-            },
-            "L3_Cd_20_rep3": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4866800.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 761967.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.156564,
-                "ESTIMATED_LIBRARY_SIZE": 13873948.0
-            },
-            "L3_Cd_0_rep2": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4818650.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 724337.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.150319,
-                "ESTIMATED_LIBRARY_SIZE": 14377980.0
-            }
-        },
-        {
-            "L3_Cd_20_rep3-unsort": {
-                "total_reads": 4985526.0,
-                "avg_input_read_length": 294.0,
-                "uniquely_mapped": 4615425.0,
-                "uniquely_mapped_percent": 92.58,
-                "avg_mapped_read_length": 292.99,
-                "num_splices": 4098605.0,
-                "num_annotated_splices": 4068822.0,
-                "num_GTAG_splices": 4068308.0,
-                "num_GCAG_splices": 19222.0,
-                "num_ATAC_splices": 486.0,
-                "num_noncanonical_splices": 10589.0,
-                "mismatch_rate": 0.18,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.47,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.1,
-                "multimapped": 251375.0,
-                "multimapped_percent": 5.04,
-                "multimapped_toomany": 4029.0,
-                "multimapped_toomany_percent": 0.08,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.27,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 113201,
-                "unmapped_other": 1496
-            },
-            "L3_Cd_0_rep1-unsort": {
-                "total_reads": 4982616.0,
-                "avg_input_read_length": 293.0,
-                "uniquely_mapped": 3863401.0,
-                "uniquely_mapped_percent": 77.54,
-                "avg_mapped_read_length": 292.52,
-                "num_splices": 2356596.0,
-                "num_annotated_splices": 2331357.0,
-                "num_GTAG_splices": 2333583.0,
-                "num_GCAG_splices": 11861.0,
-                "num_ATAC_splices": 308.0,
-                "num_noncanonical_splices": 10844.0,
-                "mismatch_rate": 0.18,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.46,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.1,
-                "multimapped": 998306.0,
-                "multimapped_percent": 20.04,
-                "multimapped_toomany": 3056.0,
-                "multimapped_toomany_percent": 0.06,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.34,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 116361,
-                "unmapped_other": 1492
-            },
-            "L3_Cd_0_rep2-unsort": {
-                "total_reads": 4967142.0,
-                "avg_input_read_length": 294.0,
-                "uniquely_mapped": 4559082.0,
-                "uniquely_mapped_percent": 91.78,
-                "avg_mapped_read_length": 293.05,
-                "num_splices": 3956214.0,
-                "num_annotated_splices": 3919995.0,
-                "num_GTAG_splices": 3923410.0,
-                "num_GCAG_splices": 17539.0,
-                "num_ATAC_splices": 484.0,
-                "num_noncanonical_splices": 14781.0,
-                "mismatch_rate": 0.2,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.52,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.13,
-                "multimapped": 259568.0,
-                "multimapped_percent": 5.23,
-                "multimapped_toomany": 4592.0,
-                "multimapped_toomany_percent": 0.09,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.87,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 142411,
-                "unmapped_other": 1489
-            },
-            "L3_Cd_0_rep3-unsort": {
-                "total_reads": 4971401.0,
-                "avg_input_read_length": 293.0,
-                "uniquely_mapped": 4628221.0,
-                "uniquely_mapped_percent": 93.1,
-                "avg_mapped_read_length": 291.87,
-                "num_splices": 4113883.0,
-                "num_annotated_splices": 4080978.0,
-                "num_GTAG_splices": 4082695.0,
-                "num_GCAG_splices": 18817.0,
-                "num_ATAC_splices": 468.0,
-                "num_noncanonical_splices": 11903.0,
-                "mismatch_rate": 0.18,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.48,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.11,
-                "multimapped": 213091.0,
-                "multimapped_percent": 4.29,
-                "multimapped_toomany": 4022.0,
-                "multimapped_toomany_percent": 0.08,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.51,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 124578,
-                "unmapped_other": 1489
-            },
-            "L3_Cd_20_rep1-unsort": {
-                "total_reads": 4975482.0,
-                "avg_input_read_length": 296.0,
-                "uniquely_mapped": 4574366.0,
-                "uniquely_mapped_percent": 91.94,
-                "avg_mapped_read_length": 294.57,
-                "num_splices": 4057040.0,
-                "num_annotated_splices": 4027166.0,
-                "num_GTAG_splices": 4027849.0,
-                "num_GCAG_splices": 18689.0,
-                "num_ATAC_splices": 472.0,
-                "num_noncanonical_splices": 10030.0,
-                "mismatch_rate": 0.2,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.48,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.12,
-                "multimapped": 244207.0,
-                "multimapped_percent": 4.91,
-                "multimapped_toomany": 3676.0,
-                "multimapped_toomany_percent": 0.07,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 3.05,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 151740,
-                "unmapped_other": 1493
-            },
-            "L3_Cd_20_rep2-unsort": {
-                "total_reads": 4966139.0,
-                "avg_input_read_length": 295.0,
-                "uniquely_mapped": 4542041.0,
-                "uniquely_mapped_percent": 91.46,
-                "avg_mapped_read_length": 293.89,
-                "num_splices": 4030894.0,
-                "num_annotated_splices": 4000622.0,
-                "num_GTAG_splices": 4001565.0,
-                "num_GCAG_splices": 18007.0,
-                "num_ATAC_splices": 444.0,
-                "num_noncanonical_splices": 10878.0,
-                "mismatch_rate": 0.22,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.51,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.14,
-                "multimapped": 219595.0,
-                "multimapped_percent": 4.42,
-                "multimapped_toomany": 3770.0,
-                "multimapped_toomany_percent": 0.08,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 4.01,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 199242,
-                "unmapped_other": 1491
-            }
-        },
-        {
-            "L3_Cd_20_rep3_2": {
-                "percent_gc": 47.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 50.58026326657541,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep2_1": {
-                "percent_gc": 47.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 50.50352768947393,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep1_1": {
-                "percent_gc": 48.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 65.8553291402955,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep3_1": {
-                "percent_gc": 47.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 49.66341216564681,
-                "percent_fails": 10.0
-            },
-            "L3_Cd_0_rep3_2": {
-                "percent_gc": 46.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 49.067641568017976,
-                "percent_fails": 10.0
-            },
-            "L3_Cd_0_rep1_2": {
-                "percent_gc": 48.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 64.95586976563654,
-                "percent_fails": 20.0
-            },
             "L3_Cd_20_rep2_2": {
                 "percent_gc": 47.0,
                 "avg_sequence_length": 150.0,
@@ -586,18 +38,11 @@
                 "percent_duplicates": 48.39831557346671,
                 "percent_fails": 10.0
             },
-            "L3_Cd_20_rep3_1": {
+            "L3_Cd_0_rep3_1": {
                 "percent_gc": 47.0,
                 "avg_sequence_length": 150.0,
                 "total_sequences": 5000000.0,
-                "percent_duplicates": 51.33849812246248,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep2_2": {
-                "percent_gc": 47.0,
-                "avg_sequence_length": 150.0,
-                "total_sequences": 5000000.0,
-                "percent_duplicates": 49.4040029865606,
+                "percent_duplicates": 49.66341216564681,
                 "percent_fails": 10.0
             },
             "L3_Cd_20_rep2_1": {
@@ -607,11 +52,39 @@
                 "percent_duplicates": 50.26330069761657,
                 "percent_fails": 20.0
             },
+            "L3_Cd_0_rep2_1": {
+                "percent_gc": 47.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 50.50352768947393,
+                "percent_fails": 20.0
+            },
+            "L3_Cd_20_rep3_1": {
+                "percent_gc": 47.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 51.33849812246248,
+                "percent_fails": 20.0
+            },
+            "L3_Cd_0_rep1_1": {
+                "percent_gc": 48.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 65.8553291402955,
+                "percent_fails": 20.0
+            },
             "L3_Cd_20_rep1_1": {
                 "percent_gc": 46.0,
                 "avg_sequence_length": 150.0,
                 "total_sequences": 5000000.0,
                 "percent_duplicates": 49.94454930244376,
+                "percent_fails": 10.0
+            },
+            "L3_Cd_0_rep3_2": {
+                "percent_gc": 46.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 49.067641568017976,
                 "percent_fails": 10.0
             },
             "L3_Cd_20_rep1_2": {
@@ -621,11 +94,74 @@
                 "percent_duplicates": 48.62981150276482,
                 "percent_fails": 10.0
             },
+            "L3_Cd_0_rep2_2": {
+                "percent_gc": 47.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 49.4040029865606,
+                "percent_fails": 10.0
+            },
+            "L3_Cd_20_rep3_2": {
+                "percent_gc": 47.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 50.58026326657541,
+                "percent_fails": 20.0
+            },
+            "L3_Cd_0_rep1_2": {
+                "percent_gc": 48.0,
+                "avg_sequence_length": 150.0,
+                "total_sequences": 5000000.0,
+                "percent_duplicates": 64.95586976563654,
+                "percent_fails": 20.0
+            },
             "L3_Cd_20_rep2_trim_1": {
                 "percent_gc": 46.0,
                 "avg_sequence_length": 147.79870881584264,
                 "total_sequences": 4966139.0,
-                "percent_duplicates": 50.22791350015376,
+                "percent_duplicates": 50.22273995309392,
+                "percent_fails": 20.0
+            },
+            "L3_Cd_0_rep3_trim_1": {
+                "percent_gc": 46.0,
+                "avg_sequence_length": 146.68930247228096,
+                "total_sequences": 4971401.0,
+                "percent_duplicates": 49.647666873202624,
+                "percent_fails": 10.0
+            },
+            "L3_Cd_20_rep1_trim_1": {
+                "percent_gc": 46.0,
+                "avg_sequence_length": 148.03140841430036,
+                "total_sequences": 4975482.0,
+                "percent_duplicates": 49.95125071912643,
+                "percent_fails": 10.0
+            },
+            "L3_Cd_0_rep2_trim_1": {
+                "percent_gc": 47.0,
+                "avg_sequence_length": 147.33525033107568,
+                "total_sequences": 4967142.0,
+                "percent_duplicates": 50.50997298070442,
+                "percent_fails": 20.0
+            },
+            "L3_Cd_20_rep1_trim_2": {
+                "percent_gc": 46.0,
+                "avg_sequence_length": 148.03140841430036,
+                "total_sequences": 4975482.0,
+                "percent_duplicates": 48.67267104774447,
+                "percent_fails": 10.0
+            },
+            "L3_Cd_0_rep3_trim_2": {
+                "percent_gc": 46.0,
+                "avg_sequence_length": 146.68930247228096,
+                "total_sequences": 4971401.0,
+                "percent_duplicates": 49.11064276113646,
+                "percent_fails": 10.0
+            },
+            "L3_Cd_20_rep3_trim_1": {
+                "percent_gc": 46.0,
+                "avg_sequence_length": 147.1834925743041,
+                "total_sequences": 4985526.0,
+                "percent_duplicates": 51.29161618522444,
                 "percent_fails": 20.0
             },
             "L3_Cd_20_rep2_trim_2": {
@@ -639,63 +175,14 @@
                 "percent_gc": 47.0,
                 "avg_sequence_length": 146.89740008060022,
                 "total_sequences": 4982616.0,
-                "percent_duplicates": 65.86095590163428,
+                "percent_duplicates": 65.86488828744662,
                 "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep1_trim_2": {
-                "percent_gc": 47.0,
-                "avg_sequence_length": 146.89740008060022,
-                "total_sequences": 4982616.0,
-                "percent_duplicates": 65.01510869657623,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep3_trim_1": {
-                "percent_gc": 46.0,
-                "avg_sequence_length": 146.68930247228096,
-                "total_sequences": 4971401.0,
-                "percent_duplicates": 49.647666873202624,
-                "percent_fails": 10.0
-            },
-            "L3_Cd_0_rep3_trim_2": {
-                "percent_gc": 46.0,
-                "avg_sequence_length": 146.68930247228096,
-                "total_sequences": 4971401.0,
-                "percent_duplicates": 49.11064276113646,
-                "percent_fails": 10.0
-            },
-            "L3_Cd_20_rep1_trim_1": {
-                "percent_gc": 46.0,
-                "avg_sequence_length": 148.03140841430036,
-                "total_sequences": 4975482.0,
-                "percent_duplicates": 49.95125071912643,
-                "percent_fails": 10.0
-            },
-            "L3_Cd_20_rep1_trim_2": {
-                "percent_gc": 46.0,
-                "avg_sequence_length": 148.03140841430036,
-                "total_sequences": 4975482.0,
-                "percent_duplicates": 48.67267104774447,
-                "percent_fails": 10.0
             },
             "L3_Cd_20_rep3_trim_2": {
                 "percent_gc": 46.0,
                 "avg_sequence_length": 147.1834925743041,
                 "total_sequences": 4985526.0,
-                "percent_duplicates": 50.58885102778345,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_20_rep3_trim_1": {
-                "percent_gc": 46.0,
-                "avg_sequence_length": 147.1834925743041,
-                "total_sequences": 4985526.0,
-                "percent_duplicates": 51.29161618522444,
-                "percent_fails": 20.0
-            },
-            "L3_Cd_0_rep2_trim_1": {
-                "percent_gc": 47.0,
-                "avg_sequence_length": 147.33525033107568,
-                "total_sequences": 4967142.0,
-                "percent_duplicates": 50.50997298070442,
+                "percent_duplicates": 50.58741412885717,
                 "percent_fails": 20.0
             },
             "L3_Cd_0_rep2_trim_2": {
@@ -704,119 +191,17 @@
                 "total_sequences": 4967142.0,
                 "percent_duplicates": 49.45964256366221,
                 "percent_fails": 10.0
+            },
+            "L3_Cd_0_rep1_trim_2": {
+                "percent_gc": 47.0,
+                "avg_sequence_length": 146.89740008060022,
+                "total_sequences": 4982616.0,
+                "percent_duplicates": 65.01510869657623,
+                "percent_fails": 20.0
             }
         }
     ],
     "report_general_stats_headers": [
-        {
-            "percent_assigned": {
-                "title": "% Assigned",
-                "description": "% Assigned reads",
-                "max": 100,
-                "min": 0,
-                "suffix": "%",
-                "scale": "RdYlGn",
-                "namespace": "featureCounts",
-                "rid": "mqc-generalstats-featurecounts-percent_assigned",
-                "format": "{:,.1f}",
-                "colour": "55,126,184",
-                "hidden": null,
-                "ceiling": null,
-                "floor": null,
-                "minRange": null,
-                "shared_key": null,
-                "modify": null,
-                "placement": 1000.0,
-                "dmax": 100.0,
-                "dmin": 0.0
-            },
-            "Assigned": {
-                "title": "M Assigned",
-                "description": "Assigned reads (millions)",
-                "min": 0,
-                "scale": "PuBu",
-                "modify": 1e-06,
-                "shared_key": "read_count",
-                "namespace": "featureCounts",
-                "rid": "mqc-generalstats-featurecounts-Assigned",
-                "format": "{:,.1f}",
-                "colour": "55,126,184",
-                "hidden": null,
-                "max": null,
-                "ceiling": null,
-                "floor": null,
-                "minRange": null,
-                "placement": 1000.0,
-                "dmax": 8.990810999999999,
-                "dmin": 0.0
-            }
-        },
-        {
-            "PERCENT_DUPLICATION": {
-                "title": "% Dups",
-                "description": "Mark Duplicates - Percent Duplication",
-                "max": 100,
-                "min": 0,
-                "suffix": "%",
-                "scale": "OrRd",
-                "modify": 100.0,
-                "namespace": "Picard",
-                "rid": "mqc-generalstats-picard-PERCENT_DUPLICATION",
-                "format": "{:,.1f}",
-                "colour": "77,175,74",
-                "hidden": null,
-                "ceiling": null,
-                "floor": null,
-                "minRange": null,
-                "shared_key": null,
-                "placement": 1000.0,
-                "dmax": 100.0,
-                "dmin": 0.0
-            }
-        },
-        {
-            "uniquely_mapped_percent": {
-                "title": "% Aligned",
-                "description": "% Uniquely mapped reads",
-                "max": 100,
-                "min": 0,
-                "suffix": "%",
-                "scale": "YlGn",
-                "namespace": "STAR",
-                "rid": "mqc-generalstats-star-uniquely_mapped_percent",
-                "format": "{:,.1f}",
-                "colour": "152,78,163",
-                "hidden": null,
-                "ceiling": null,
-                "floor": null,
-                "minRange": null,
-                "shared_key": null,
-                "modify": null,
-                "placement": 1000.0,
-                "dmax": 100.0,
-                "dmin": 0.0
-            },
-            "uniquely_mapped": {
-                "title": "M Aligned",
-                "description": "Uniquely mapped reads (millions)",
-                "min": 0,
-                "scale": "PuRd",
-                "modify": 1e-06,
-                "shared_key": "read_count",
-                "namespace": "STAR",
-                "rid": "mqc-generalstats-star-uniquely_mapped",
-                "format": "{:,.1f}",
-                "colour": "152,78,163",
-                "hidden": null,
-                "max": null,
-                "ceiling": null,
-                "floor": null,
-                "minRange": null,
-                "placement": 1000.0,
-                "dmax": 8.990810999999999,
-                "dmin": 0.0
-            }
-        },
         {
             "percent_duplicates": {
                 "title": "% Dups",
@@ -828,7 +213,7 @@
                 "namespace": "FastQC",
                 "rid": "mqc-generalstats-fastqc-percent_duplicates",
                 "format": "{:,.1f}",
-                "colour": "255,127,0",
+                "colour": "55,126,184",
                 "hidden": null,
                 "ceiling": null,
                 "floor": null,
@@ -849,7 +234,7 @@
                 "format": "{:,.0f}",
                 "namespace": "FastQC",
                 "rid": "mqc-generalstats-fastqc-percent_gc",
-                "colour": "255,127,0",
+                "colour": "55,126,184",
                 "hidden": null,
                 "ceiling": null,
                 "floor": null,
@@ -870,7 +255,7 @@
                 "hidden": true,
                 "namespace": "FastQC",
                 "rid": "mqc-generalstats-fastqc-avg_sequence_length",
-                "colour": "255,127,0",
+                "colour": "55,126,184",
                 "max": null,
                 "ceiling": null,
                 "floor": null,
@@ -892,7 +277,7 @@
                 "hidden": true,
                 "namespace": "FastQC",
                 "rid": "mqc-generalstats-fastqc-percent_fails",
-                "colour": "255,127,0",
+                "colour": "55,126,184",
                 "ceiling": null,
                 "floor": null,
                 "minRange": null,
@@ -912,475 +297,20 @@
                 "namespace": "FastQC",
                 "rid": "mqc-generalstats-fastqc-total_sequences",
                 "format": "{:,.1f}",
-                "colour": "255,127,0",
+                "colour": "55,126,184",
                 "hidden": null,
                 "max": null,
                 "ceiling": null,
                 "floor": null,
                 "minRange": null,
                 "placement": 1000.0,
-                "dmax": 8.990810999999999,
+                "dmax": 5.0,
                 "dmin": 0.0
             }
         }
     ],
-    "report_multiqc_command": "/trinity/shared/apps/site-local/multiqc/1.9/bin/multiqc /mnt/scratch15/smbpk/transcript_reads2DEGs_slurm --outdir /trinity/home/smbpk/scratch15/transcript_reads2DEGs_slurm/work/multiqc/",
+    "report_multiqc_command": "/trinity/shared/apps/site-local/multiqc/1.9/bin/multiqc /mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm --outdir /trinity/home/smbpk/ecotox/transcript_reads2DEGs_slurm/work/multiqc/",
     "report_plot_data": {
-        "featureCounts_assignment_plot": {
-            "plot_type": "bar_graph",
-            "samples": [
-                [
-                    "L3_Cd_0_rep1.markdup",
-                    "L3_Cd_0_rep1.rmdup",
-                    "L3_Cd_0_rep2.markdup",
-                    "L3_Cd_0_rep2.rmdup",
-                    "L3_Cd_0_rep3.markdup",
-                    "L3_Cd_0_rep3.rmdup",
-                    "L3_Cd_20_rep1.markdup",
-                    "L3_Cd_20_rep1.rmdup",
-                    "L3_Cd_20_rep2.markdup",
-                    "L3_Cd_20_rep2.rmdup",
-                    "L3_Cd_20_rep3.markdup",
-                    "L3_Cd_20_rep3.rmdup"
-                ]
-            ],
-            "datasets": [
-                [
-                    {
-                        "name": "Assigned",
-                        "data": [
-                            7465024.0,
-                            5100668.0,
-                            8866286.0,
-                            7554012.0,
-                            8990811.0,
-                            7678569.0,
-                            8876322.0,
-                            7632022.0,
-                            8828069.0,
-                            7544494.0,
-                            8969696.0,
-                            7586848.0
-                        ]
-                    },
-                    {
-                        "name": "Unassigned_MultiMapping",
-                        "data": [
-                            1996612.0,
-                            698190.0,
-                            519136.0,
-                            406512.0,
-                            426182.0,
-                            345552.0,
-                            488414.0,
-                            381192.0,
-                            439190.0,
-                            360616.0,
-                            502750.0,
-                            387154.0
-                        ]
-                    },
-                    {
-                        "name": "Unassigned_NoFeatures",
-                        "data": [
-                            38430.0,
-                            36717.0,
-                            59041.0,
-                            56206.0,
-                            64473.0,
-                            61596.0,
-                            65241.0,
-                            62725.0,
-                            61989.0,
-                            58699.0,
-                            61350.0,
-                            58580.0
-                        ]
-                    },
-                    {
-                        "name": "Unassigned_Ambiguity",
-                        "data": [
-                            223348.0,
-                            128771.0,
-                            192837.0,
-                            171896.0,
-                            201158.0,
-                            179439.0,
-                            207169.0,
-                            183479.0,
-                            194024.0,
-                            172325.0,
-                            199804.0,
-                            177084.0
-                        ]
-                    }
-                ]
-            ],
-            "config": {
-                "id": "featureCounts_assignment_plot",
-                "title": "featureCounts: Assignments",
-                "ylab": "# Reads",
-                "cpswitch_counts_label": "Number of Reads"
-            }
-        },
-        "picard_deduplication": {
-            "plot_type": "bar_graph",
-            "samples": [
-                [
-                    "L3_Cd_0_rep1",
-                    "L3_Cd_0_rep2",
-                    "L3_Cd_0_rep3",
-                    "L3_Cd_20_rep1",
-                    "L3_Cd_20_rep2",
-                    "L3_Cd_20_rep3"
-                ]
-            ],
-            "datasets": [
-                [
-                    {
-                        "name": "Unique Pairs",
-                        "data": [
-                            5964346.0,
-                            8188626.0,
-                            8265156.0,
-                            8259418.0,
-                            8136134.0,
-                            8209666.0
-                        ]
-                    },
-                    {
-                        "name": "Duplicate Pairs Nonoptical",
-                        "data": [
-                            3759068.0,
-                            1448674.0,
-                            1417468.0,
-                            1377728.0,
-                            1387138.0,
-                            1523934.0
-                        ]
-                    }
-                ]
-            ],
-            "config": {
-                "id": "picard_deduplication",
-                "title": "Picard: Deduplication Stats",
-                "ylab": "# Reads",
-                "cpswitch_counts_label": "Number of Reads",
-                "cpswitch_c_active": false,
-                "stacking": "percent"
-            }
-        },
-        "star_alignment_plot": {
-            "plot_type": "bar_graph",
-            "samples": [
-                [
-                    "L3_Cd_0_rep1-unsort",
-                    "L3_Cd_0_rep2-unsort",
-                    "L3_Cd_0_rep3-unsort",
-                    "L3_Cd_20_rep1-unsort",
-                    "L3_Cd_20_rep2-unsort",
-                    "L3_Cd_20_rep3-unsort"
-                ]
-            ],
-            "datasets": [
-                [
-                    {
-                        "name": "Uniquely mapped",
-                        "data": [
-                            3863401.0,
-                            4559082.0,
-                            4628221.0,
-                            4574366.0,
-                            4542041.0,
-                            4615425.0
-                        ],
-                        "color": "#437bb1"
-                    },
-                    {
-                        "name": "Mapped to multiple loci",
-                        "data": [
-                            998306.0,
-                            259568.0,
-                            213091.0,
-                            244207.0,
-                            219595.0,
-                            251375.0
-                        ],
-                        "color": "#7cb5ec"
-                    },
-                    {
-                        "name": "Mapped to too many loci",
-                        "data": [
-                            3056.0,
-                            4592.0,
-                            4022.0,
-                            3676.0,
-                            3770.0,
-                            4029.0
-                        ],
-                        "color": "#f7a35c"
-                    },
-                    {
-                        "name": "Unmapped: too short",
-                        "data": [
-                            116361.0,
-                            142411.0,
-                            124578.0,
-                            151740.0,
-                            199242.0,
-                            113201.0
-                        ],
-                        "color": "#b1084c"
-                    },
-                    {
-                        "name": "Unmapped: other",
-                        "data": [
-                            1492.0,
-                            1489.0,
-                            1489.0,
-                            1493.0,
-                            1491.0,
-                            1496.0
-                        ],
-                        "color": "#7f0000"
-                    }
-                ]
-            ],
-            "config": {
-                "id": "star_alignment_plot",
-                "title": "STAR: Alignment Scores",
-                "ylab": "# Reads",
-                "cpswitch_counts_label": "Number of Reads"
-            }
-        },
-        "star_gene_counts": {
-            "plot_type": "bar_graph",
-            "samples": [
-                [
-                    "L3_Cd_0_rep1-unsort",
-                    "L3_Cd_0_rep2-unsort",
-                    "L3_Cd_0_rep3-unsort",
-                    "L3_Cd_20_rep1-unsort",
-                    "L3_Cd_20_rep2-unsort",
-                    "L3_Cd_20_rep3-unsort"
-                ],
-                [
-                    "L3_Cd_0_rep1-unsort",
-                    "L3_Cd_0_rep2-unsort",
-                    "L3_Cd_0_rep3-unsort",
-                    "L3_Cd_20_rep1-unsort",
-                    "L3_Cd_20_rep2-unsort",
-                    "L3_Cd_20_rep3-unsort"
-                ],
-                [
-                    "L3_Cd_0_rep1-unsort",
-                    "L3_Cd_0_rep2-unsort",
-                    "L3_Cd_0_rep3-unsort",
-                    "L3_Cd_20_rep1-unsort",
-                    "L3_Cd_20_rep2-unsort",
-                    "L3_Cd_20_rep3-unsort"
-                ]
-            ],
-            "datasets": [
-                [
-                    {
-                        "name": "Overlapping Genes",
-                        "data": [
-                            3684152.0,
-                            4401997.0,
-                            4468032.0,
-                            4399697.0,
-                            4375323.0,
-                            4454619.0
-                        ],
-                        "color": "#2f7ed8"
-                    },
-                    {
-                        "name": "No Feature",
-                        "data": [
-                            16464.0,
-                            25240.0,
-                            28094.0,
-                            26521.0,
-                            24246.0,
-                            26402.0
-                        ],
-                        "color": "#0d233a"
-                    },
-                    {
-                        "name": "Ambiguous Features",
-                        "data": [
-                            162785.0,
-                            131845.0,
-                            132095.0,
-                            148148.0,
-                            142472.0,
-                            134404.0
-                        ],
-                        "color": "#492970"
-                    },
-                    {
-                        "name": "Multimapping",
-                        "data": [
-                            998306.0,
-                            259568.0,
-                            213091.0,
-                            244207.0,
-                            219595.0,
-                            251375.0
-                        ],
-                        "color": "#f28f43"
-                    },
-                    {
-                        "name": "Unmapped",
-                        "data": [
-                            120909.0,
-                            148492.0,
-                            130089.0,
-                            156909.0,
-                            204503.0,
-                            118726.0
-                        ],
-                        "color": "#7f0000"
-                    }
-                ],
-                [
-                    {
-                        "name": "Overlapping Genes",
-                        "data": [
-                            1973714.0,
-                            2277725.0,
-                            2311958.0,
-                            2290146.0,
-                            2271073.0,
-                            2312172.0
-                        ],
-                        "color": "#2f7ed8"
-                    },
-                    {
-                        "name": "No Feature",
-                        "data": [
-                            1871640.0,
-                            2254392.0,
-                            2289051.0,
-                            2255459.0,
-                            2241983.0,
-                            2276263.0
-                        ],
-                        "color": "#0d233a"
-                    },
-                    {
-                        "name": "Ambiguous Features",
-                        "data": [
-                            18047.0,
-                            26965.0,
-                            27212.0,
-                            28761.0,
-                            28985.0,
-                            26990.0
-                        ],
-                        "color": "#492970"
-                    },
-                    {
-                        "name": "Multimapping",
-                        "data": [
-                            998306.0,
-                            259568.0,
-                            213091.0,
-                            244207.0,
-                            219595.0,
-                            251375.0
-                        ],
-                        "color": "#f28f43"
-                    },
-                    {
-                        "name": "Unmapped",
-                        "data": [
-                            120909.0,
-                            148492.0,
-                            130089.0,
-                            156909.0,
-                            204503.0,
-                            118726.0
-                        ],
-                        "color": "#7f0000"
-                    }
-                ],
-                [
-                    {
-                        "name": "Overlapping Genes",
-                        "data": [
-                            1968595.0,
-                            2283952.0,
-                            2315579.0,
-                            2294714.0,
-                            2276828.0,
-                            2307202.0
-                        ],
-                        "color": "#2f7ed8"
-                    },
-                    {
-                        "name": "No Feature",
-                        "data": [
-                            1877029.0,
-                            2248509.0,
-                            2285781.0,
-                            2250913.0,
-                            2236160.0,
-                            2281537.0
-                        ],
-                        "color": "#0d233a"
-                    },
-                    {
-                        "name": "Ambiguous Features",
-                        "data": [
-                            17777.0,
-                            26621.0,
-                            26861.0,
-                            28739.0,
-                            29053.0,
-                            26686.0
-                        ],
-                        "color": "#492970"
-                    },
-                    {
-                        "name": "Multimapping",
-                        "data": [
-                            998306.0,
-                            259568.0,
-                            213091.0,
-                            244207.0,
-                            219595.0,
-                            251375.0
-                        ],
-                        "color": "#f28f43"
-                    },
-                    {
-                        "name": "Unmapped",
-                        "data": [
-                            120909.0,
-                            148492.0,
-                            130089.0,
-                            156909.0,
-                            204503.0,
-                            118726.0
-                        ],
-                        "color": "#7f0000"
-                    }
-                ]
-            ],
-            "config": {
-                "id": "star_gene_counts",
-                "title": "STAR: Gene Counts",
-                "ylab": "# Reads",
-                "cpswitch_counts_label": "Number of Reads",
-                "data_labels": [
-                    "Unstranded",
-                    "Same Stranded",
-                    "Reverse Stranded"
-                ]
-            }
-        },
         "fastqc_sequence_counts_plot": {
             "plot_type": "bar_graph",
             "samples": [
@@ -1418,7 +348,7 @@
                         "data": [
                             1707234.0,
                             1752207.0,
-                            1701018.0,
+                            1700822.0,
                             1743163.0,
                             2474824.0,
                             2529800.0,
@@ -1434,12 +364,12 @@
                             2553783.0,
                             2486835.0,
                             2580085.0,
-                            2471751.0,
+                            2472008.0,
                             2558659.0,
                             2433076.0,
                             2470987.0,
                             2428370.0,
-                            2463406.0
+                            2463478.0
                         ]
                     },
                     {
@@ -1447,7 +377,7 @@
                         "data": [
                             3292766.0,
                             3247793.0,
-                            3281598.0,
+                            3281794.0,
                             3239453.0,
                             2525176.0,
                             2470200.0,
@@ -1463,12 +393,12 @@
                             2421699.0,
                             2513165.0,
                             2419915.0,
-                            2494388.0,
+                            2494131.0,
                             2407480.0,
                             2566924.0,
                             2529013.0,
                             2557156.0,
-                            2522120.0
+                            2522048.0
                         ]
                     }
                 ]
@@ -5288,30 +4218,30 @@
                 "xDecimals": false,
                 "tt_label": "<b>Base {point.x}</b>: {point.y:.2f}",
                 "colors": {
-                    "L3_Cd_20_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep2_1": "#5cb85c",
-                    "L3_Cd_0_rep1_1": "#5cb85c",
-                    "L3_Cd_0_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_2": "#5cb85c",
-                    "L3_Cd_20_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_0_rep3_1": "#5cb85c",
                     "L3_Cd_20_rep2_1": "#5cb85c",
+                    "L3_Cd_0_rep2_1": "#5cb85c",
+                    "L3_Cd_20_rep3_1": "#5cb85c",
+                    "L3_Cd_0_rep1_1": "#5cb85c",
                     "L3_Cd_20_rep1_1": "#5cb85c",
+                    "L3_Cd_0_rep3_2": "#5cb85c",
                     "L3_Cd_20_rep1_2": "#5cb85c",
+                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_20_rep3_2": "#5cb85c",
+                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_trim_1": "#5cb85c",
+                    "L3_Cd_0_rep3_trim_1": "#5cb85c",
+                    "L3_Cd_20_rep1_trim_1": "#5cb85c",
+                    "L3_Cd_0_rep2_trim_1": "#5cb85c",
+                    "L3_Cd_20_rep1_trim_2": "#5cb85c",
+                    "L3_Cd_0_rep3_trim_2": "#5cb85c",
+                    "L3_Cd_20_rep3_trim_1": "#5cb85c",
                     "L3_Cd_20_rep2_trim_2": "#5cb85c",
                     "L3_Cd_0_rep1_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep1_trim_2": "#5cb85c",
-                    "L3_Cd_0_rep3_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep3_trim_2": "#5cb85c",
-                    "L3_Cd_20_rep1_trim_1": "#5cb85c",
-                    "L3_Cd_20_rep1_trim_2": "#5cb85c",
                     "L3_Cd_20_rep3_trim_2": "#5cb85c",
-                    "L3_Cd_20_rep3_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep2_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep2_trim_2": "#5cb85c"
+                    "L3_Cd_0_rep2_trim_2": "#5cb85c",
+                    "L3_Cd_0_rep1_trim_2": "#5cb85c"
                 },
                 "yPlotBands": [
                     {
@@ -6883,30 +5813,30 @@
                 "xmin": 0,
                 "xDecimals": false,
                 "colors": {
-                    "L3_Cd_20_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep2_1": "#5cb85c",
-                    "L3_Cd_0_rep1_1": "#5cb85c",
-                    "L3_Cd_0_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_2": "#5cb85c",
-                    "L3_Cd_20_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_0_rep3_1": "#5cb85c",
                     "L3_Cd_20_rep2_1": "#5cb85c",
+                    "L3_Cd_0_rep2_1": "#5cb85c",
+                    "L3_Cd_20_rep3_1": "#5cb85c",
+                    "L3_Cd_0_rep1_1": "#5cb85c",
                     "L3_Cd_20_rep1_1": "#5cb85c",
+                    "L3_Cd_0_rep3_2": "#5cb85c",
                     "L3_Cd_20_rep1_2": "#5cb85c",
+                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_20_rep3_2": "#5cb85c",
+                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_trim_1": "#5cb85c",
+                    "L3_Cd_0_rep3_trim_1": "#5cb85c",
+                    "L3_Cd_20_rep1_trim_1": "#5cb85c",
+                    "L3_Cd_0_rep2_trim_1": "#5cb85c",
+                    "L3_Cd_20_rep1_trim_2": "#5cb85c",
+                    "L3_Cd_0_rep3_trim_2": "#5cb85c",
+                    "L3_Cd_20_rep3_trim_1": "#5cb85c",
                     "L3_Cd_20_rep2_trim_2": "#5cb85c",
                     "L3_Cd_0_rep1_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep1_trim_2": "#5cb85c",
-                    "L3_Cd_0_rep3_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep3_trim_2": "#5cb85c",
-                    "L3_Cd_20_rep1_trim_1": "#5cb85c",
-                    "L3_Cd_20_rep1_trim_2": "#5cb85c",
                     "L3_Cd_20_rep3_trim_2": "#5cb85c",
-                    "L3_Cd_20_rep3_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep2_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep2_trim_2": "#5cb85c"
+                    "L3_Cd_0_rep2_trim_2": "#5cb85c",
+                    "L3_Cd_0_rep1_trim_2": "#5cb85c"
                 },
                 "tt_label": "<b>Phred {point.x}</b>: {point.y} reads",
                 "xPlotBands": [
@@ -26627,30 +25557,30 @@
                 "yDecimals": false,
                 "tt_label": "<b>{point.x}% GC</b>: {point.y}",
                 "colors": {
-                    "L3_Cd_20_rep3_2": "#f0ad4e",
-                    "L3_Cd_0_rep2_1": "#f0ad4e",
-                    "L3_Cd_0_rep1_1": "#f0ad4e",
-                    "L3_Cd_0_rep3_1": "#f0ad4e",
-                    "L3_Cd_0_rep3_2": "#f0ad4e",
-                    "L3_Cd_0_rep1_2": "#f0ad4e",
                     "L3_Cd_20_rep2_2": "#f0ad4e",
-                    "L3_Cd_20_rep3_1": "#f0ad4e",
-                    "L3_Cd_0_rep2_2": "#f0ad4e",
+                    "L3_Cd_0_rep3_1": "#f0ad4e",
                     "L3_Cd_20_rep2_1": "#f0ad4e",
+                    "L3_Cd_0_rep2_1": "#f0ad4e",
+                    "L3_Cd_20_rep3_1": "#f0ad4e",
+                    "L3_Cd_0_rep1_1": "#f0ad4e",
                     "L3_Cd_20_rep1_1": "#f0ad4e",
+                    "L3_Cd_0_rep3_2": "#f0ad4e",
                     "L3_Cd_20_rep1_2": "#f0ad4e",
+                    "L3_Cd_0_rep2_2": "#f0ad4e",
+                    "L3_Cd_20_rep3_2": "#f0ad4e",
+                    "L3_Cd_0_rep1_2": "#f0ad4e",
                     "L3_Cd_20_rep2_trim_1": "#f0ad4e",
+                    "L3_Cd_0_rep3_trim_1": "#f0ad4e",
+                    "L3_Cd_20_rep1_trim_1": "#f0ad4e",
+                    "L3_Cd_0_rep2_trim_1": "#f0ad4e",
+                    "L3_Cd_20_rep1_trim_2": "#f0ad4e",
+                    "L3_Cd_0_rep3_trim_2": "#f0ad4e",
+                    "L3_Cd_20_rep3_trim_1": "#f0ad4e",
                     "L3_Cd_20_rep2_trim_2": "#f0ad4e",
                     "L3_Cd_0_rep1_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep1_trim_2": "#f0ad4e",
-                    "L3_Cd_0_rep3_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep3_trim_2": "#f0ad4e",
-                    "L3_Cd_20_rep1_trim_1": "#f0ad4e",
-                    "L3_Cd_20_rep1_trim_2": "#f0ad4e",
                     "L3_Cd_20_rep3_trim_2": "#f0ad4e",
-                    "L3_Cd_20_rep3_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep2_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep2_trim_2": "#f0ad4e"
+                    "L3_Cd_0_rep2_trim_2": "#f0ad4e",
+                    "L3_Cd_0_rep1_trim_2": "#f0ad4e"
                 },
                 "data_labels": [
                     {
@@ -30473,30 +29403,30 @@
                 "xmin": 0,
                 "xDecimals": false,
                 "colors": {
-                    "L3_Cd_20_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep2_1": "#5cb85c",
-                    "L3_Cd_0_rep1_1": "#5cb85c",
-                    "L3_Cd_0_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_2": "#5cb85c",
-                    "L3_Cd_20_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_0_rep3_1": "#5cb85c",
                     "L3_Cd_20_rep2_1": "#5cb85c",
+                    "L3_Cd_0_rep2_1": "#5cb85c",
+                    "L3_Cd_20_rep3_1": "#5cb85c",
+                    "L3_Cd_0_rep1_1": "#5cb85c",
                     "L3_Cd_20_rep1_1": "#5cb85c",
+                    "L3_Cd_0_rep3_2": "#5cb85c",
                     "L3_Cd_20_rep1_2": "#5cb85c",
+                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_20_rep3_2": "#5cb85c",
+                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_trim_1": "#5cb85c",
+                    "L3_Cd_0_rep3_trim_1": "#5cb85c",
+                    "L3_Cd_20_rep1_trim_1": "#5cb85c",
+                    "L3_Cd_0_rep2_trim_1": "#5cb85c",
+                    "L3_Cd_20_rep1_trim_2": "#5cb85c",
+                    "L3_Cd_0_rep3_trim_2": "#5cb85c",
+                    "L3_Cd_20_rep3_trim_1": "#5cb85c",
                     "L3_Cd_20_rep2_trim_2": "#5cb85c",
                     "L3_Cd_0_rep1_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep1_trim_2": "#5cb85c",
-                    "L3_Cd_0_rep3_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep3_trim_2": "#5cb85c",
-                    "L3_Cd_20_rep1_trim_1": "#5cb85c",
-                    "L3_Cd_20_rep1_trim_2": "#5cb85c",
                     "L3_Cd_20_rep3_trim_2": "#5cb85c",
-                    "L3_Cd_20_rep3_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep2_trim_1": "#5cb85c",
-                    "L3_Cd_0_rep2_trim_2": "#5cb85c"
+                    "L3_Cd_0_rep2_trim_2": "#5cb85c",
+                    "L3_Cd_0_rep1_trim_2": "#5cb85c"
                 },
                 "tt_label": "<b>Base {point.x}</b>: {point.y:.2f}%",
                 "yPlotBands": [
@@ -31925,30 +30855,30 @@
                 "yMinTickInterval": 0.1,
                 "xDecimals": false,
                 "colors": {
-                    "L3_Cd_20_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep2_1": "#5cb85c",
-                    "L3_Cd_0_rep1_1": "#5cb85c",
-                    "L3_Cd_0_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep3_2": "#5cb85c",
-                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_2": "#5cb85c",
-                    "L3_Cd_20_rep3_1": "#5cb85c",
-                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_0_rep3_1": "#5cb85c",
                     "L3_Cd_20_rep2_1": "#5cb85c",
+                    "L3_Cd_0_rep2_1": "#5cb85c",
+                    "L3_Cd_20_rep3_1": "#5cb85c",
+                    "L3_Cd_0_rep1_1": "#5cb85c",
                     "L3_Cd_20_rep1_1": "#5cb85c",
+                    "L3_Cd_0_rep3_2": "#5cb85c",
                     "L3_Cd_20_rep1_2": "#5cb85c",
+                    "L3_Cd_0_rep2_2": "#5cb85c",
+                    "L3_Cd_20_rep3_2": "#5cb85c",
+                    "L3_Cd_0_rep1_2": "#5cb85c",
                     "L3_Cd_20_rep2_trim_1": "#f0ad4e",
+                    "L3_Cd_0_rep3_trim_1": "#f0ad4e",
+                    "L3_Cd_20_rep1_trim_1": "#f0ad4e",
+                    "L3_Cd_0_rep2_trim_1": "#f0ad4e",
+                    "L3_Cd_20_rep1_trim_2": "#f0ad4e",
+                    "L3_Cd_0_rep3_trim_2": "#f0ad4e",
+                    "L3_Cd_20_rep3_trim_1": "#f0ad4e",
                     "L3_Cd_20_rep2_trim_2": "#f0ad4e",
                     "L3_Cd_0_rep1_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep1_trim_2": "#f0ad4e",
-                    "L3_Cd_0_rep3_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep3_trim_2": "#f0ad4e",
-                    "L3_Cd_20_rep1_trim_1": "#f0ad4e",
-                    "L3_Cd_20_rep1_trim_2": "#f0ad4e",
                     "L3_Cd_20_rep3_trim_2": "#f0ad4e",
-                    "L3_Cd_20_rep3_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep2_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep2_trim_2": "#f0ad4e"
+                    "L3_Cd_0_rep2_trim_2": "#f0ad4e",
+                    "L3_Cd_0_rep1_trim_2": "#f0ad4e"
                 },
                 "tt_label": "<b>{point.x} bp</b>: {point.y}"
             }
@@ -32004,21 +30934,21 @@
                     {
                         "name": "L3_Cd_0_rep1_trim_1",
                         "data": [
-                            26.555104479988938,
-                            7.731148079131891,
-                            3.8154681877889387,
-                            2.4405184799463373,
-                            1.881200413362882,
-                            1.533553843259419,
-                            1.1820301208931734,
-                            1.0342276336103529,
-                            0.9250035816887344,
-                            12.459510620694846,
-                            4.395066928791362,
-                            14.226044778929934,
-                            8.4936053681186,
-                            12.355564092911282,
-                            0.9719533908832968,
+                            26.55111417027961,
+                            7.730028843689782,
+                            3.811503220412795,
+                            2.4450583792210523,
+                            1.8882898526401546,
+                            1.53043845494218,
+                            1.180792722185402,
+                            1.031624467153034,
+                            0.9257239577508156,
+                            12.469892407230889,
+                            4.3974573446878855,
+                            14.22250305414373,
+                            8.491445205005421,
+                            12.352421724901557,
+                            0.9717061957557018,
                             0.0
                         ],
                         "color": "#d9534f"
@@ -32356,20 +31286,20 @@
                     {
                         "name": "L3_Cd_20_rep2_trim_1",
                         "data": [
-                            37.34923144756496,
-                            12.950626259126524,
-                            6.4615329210262775,
-                            4.226726975724824,
-                            3.044142431123887,
-                            2.3420387313358524,
-                            1.909920002704615,
-                            1.6360384715568812,
-                            1.4627016742183279,
-                            18.800146523598038,
-                            5.189064016215628,
-                            4.207730041059545,
-                            0.36411128951819594,
-                            0.055989215226477825,
+                            37.36093016820119,
+                            12.937187846957729,
+                            6.45973654051088,
+                            4.227660331887298,
+                            3.0432216123002602,
+                            2.3420453942063197,
+                            1.9165831675643796,
+                            1.6360424878069773,
+                            1.4607598967265625,
+                            18.80154069126331,
+                            5.186013370639507,
+                            4.20818383222877,
+                            0.3641062234822244,
+                            0.05598843622459976,
                             0.0,
                             0.0
                         ],
@@ -32466,20 +31396,20 @@
                     {
                         "name": "L3_Cd_20_rep3_trim_2",
                         "data": [
-                            37.59179877890718,
-                            12.036799306235494,
-                            6.296905791422336,
-                            3.988234445272939,
-                            2.9073158867367135,
-                            2.252156455575578,
-                            1.8725198675749548,
-                            1.5431506373936124,
-                            1.4339613745947655,
-                            19.43691639688677,
-                            5.59151684390823,
-                            4.746161631407402,
-                            0.275334766800297,
-                            0.027227817283640234,
+                            37.5931074215622,
+                            12.036938321437315,
+                            6.296979783223755,
+                            3.98828210564304,
+                            2.907351205995367,
+                            2.2521842584399834,
+                            1.871599050786037,
+                            1.544125219136703,
+                            1.4339799090051775,
+                            19.43697369232709,
+                            5.589617360480187,
+                            4.746290330581685,
+                            0.2753427360226683,
+                            0.027228605358946306,
                             0.0,
                             0.0
                         ],
@@ -32515,30 +31445,30 @@
                 "yMinTickInterval": 0.1,
                 "yLabelFormat": "{value:.0f}%",
                 "colors": {
-                    "L3_Cd_20_rep3_2": "#d9534f",
-                    "L3_Cd_0_rep2_1": "#d9534f",
-                    "L3_Cd_0_rep1_1": "#d9534f",
-                    "L3_Cd_0_rep3_1": "#f0ad4e",
-                    "L3_Cd_0_rep3_2": "#f0ad4e",
-                    "L3_Cd_0_rep1_2": "#d9534f",
                     "L3_Cd_20_rep2_2": "#f0ad4e",
-                    "L3_Cd_20_rep3_1": "#d9534f",
-                    "L3_Cd_0_rep2_2": "#f0ad4e",
+                    "L3_Cd_0_rep3_1": "#f0ad4e",
                     "L3_Cd_20_rep2_1": "#d9534f",
+                    "L3_Cd_0_rep2_1": "#d9534f",
+                    "L3_Cd_20_rep3_1": "#d9534f",
+                    "L3_Cd_0_rep1_1": "#d9534f",
                     "L3_Cd_20_rep1_1": "#f0ad4e",
+                    "L3_Cd_0_rep3_2": "#f0ad4e",
                     "L3_Cd_20_rep1_2": "#f0ad4e",
+                    "L3_Cd_0_rep2_2": "#f0ad4e",
+                    "L3_Cd_20_rep3_2": "#d9534f",
+                    "L3_Cd_0_rep1_2": "#d9534f",
                     "L3_Cd_20_rep2_trim_1": "#d9534f",
+                    "L3_Cd_0_rep3_trim_1": "#f0ad4e",
+                    "L3_Cd_20_rep1_trim_1": "#f0ad4e",
+                    "L3_Cd_0_rep2_trim_1": "#d9534f",
+                    "L3_Cd_20_rep1_trim_2": "#f0ad4e",
+                    "L3_Cd_0_rep3_trim_2": "#f0ad4e",
+                    "L3_Cd_20_rep3_trim_1": "#d9534f",
                     "L3_Cd_20_rep2_trim_2": "#f0ad4e",
                     "L3_Cd_0_rep1_trim_1": "#d9534f",
-                    "L3_Cd_0_rep1_trim_2": "#d9534f",
-                    "L3_Cd_0_rep3_trim_1": "#f0ad4e",
-                    "L3_Cd_0_rep3_trim_2": "#f0ad4e",
-                    "L3_Cd_20_rep1_trim_1": "#f0ad4e",
-                    "L3_Cd_20_rep1_trim_2": "#f0ad4e",
                     "L3_Cd_20_rep3_trim_2": "#d9534f",
-                    "L3_Cd_20_rep3_trim_1": "#d9534f",
-                    "L3_Cd_0_rep2_trim_1": "#d9534f",
-                    "L3_Cd_0_rep2_trim_2": "#f0ad4e"
+                    "L3_Cd_0_rep2_trim_2": "#f0ad4e",
+                    "L3_Cd_0_rep1_trim_2": "#d9534f"
                 },
                 "tt_decimals": 2,
                 "tt_suffix": "%"
@@ -37468,637 +36398,7 @@
         }
     },
     "report_saved_raw_data": {
-        "multiqc_featureCounts": {
-            "L3_Cd_0_rep1.markdup": {
-                "Total": 9723414,
-                "Assigned": 7465024,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 1996612,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 38430,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 223348,
-                "percent_assigned": 76.77369286137564
-            },
-            "L3_Cd_20_rep2.markdup": {
-                "Total": 9523272,
-                "Assigned": 8828069,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 439190,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 61989,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 194024,
-                "percent_assigned": 92.69995648554405
-            },
-            "L3_Cd_20_rep3.markdup": {
-                "Total": 9733600,
-                "Assigned": 8969696,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 502750,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 61350,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 199804,
-                "percent_assigned": 92.1518862496918
-            },
-            "L3_Cd_0_rep3.markdup": {
-                "Total": 9682624,
-                "Assigned": 8990811,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 426182,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 64473,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 201158,
-                "percent_assigned": 92.85510828469637
-            },
-            "L3_Cd_0_rep2.markdup": {
-                "Total": 9637300,
-                "Assigned": 8866286,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 519136,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 59041,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 192837,
-                "percent_assigned": 91.99968870949333
-            },
-            "L3_Cd_20_rep1.markdup": {
-                "Total": 9637146,
-                "Assigned": 8876322,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 488414,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 65241,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 207169,
-                "percent_assigned": 92.10529756423738
-            },
-            "L3_Cd_0_rep1.rmdup": {
-                "Total": 5964346,
-                "Assigned": 5100668,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 698190,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 36717,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 128771,
-                "percent_assigned": 85.51931762510088
-            },
-            "L3_Cd_0_rep3.rmdup": {
-                "Total": 8265156,
-                "Assigned": 7678569,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 345552,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 61596,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 179439,
-                "percent_assigned": 92.90289257698221
-            },
-            "L3_Cd_0_rep2.rmdup": {
-                "Total": 8188626,
-                "Assigned": 7554012,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 406512,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 56206,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 171896,
-                "percent_assigned": 92.2500551374553
-            },
-            "L3_Cd_20_rep2.rmdup": {
-                "Total": 8136134,
-                "Assigned": 7544494,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 360616,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 58699,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 172325,
-                "percent_assigned": 92.72824169316779
-            },
-            "L3_Cd_20_rep3.rmdup": {
-                "Total": 8209666,
-                "Assigned": 7586848,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 387154,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 58580,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 177084,
-                "percent_assigned": 92.41360123542177
-            },
-            "L3_Cd_20_rep1.rmdup": {
-                "Total": 8259418,
-                "Assigned": 7632022,
-                "Unassigned_Unmapped": 0,
-                "Unassigned_Read_Type": 0,
-                "Unassigned_Singleton": 0,
-                "Unassigned_MappingQuality": 0,
-                "Unassigned_Chimera": 0,
-                "Unassigned_FragmentLength": 0,
-                "Unassigned_Duplicate": 0,
-                "Unassigned_MultiMapping": 381192,
-                "Unassigned_Secondary": 0,
-                "Unassigned_NonSplit": 0,
-                "Unassigned_NoFeatures": 62725,
-                "Unassigned_Overlapping_Length": 0,
-                "Unassigned_Ambiguity": 183479,
-                "percent_assigned": 92.403871556083
-            }
-        },
-        "multiqc_picard_dups": {
-            "L3_Cd_0_rep1": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4861707.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 1879534.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.3866,
-                "ESTIMATED_LIBRARY_SIZE": 4533434.0,
-                "READS_IN_DUPLICATE_PAIRS": 3759068.0,
-                "READS_IN_UNIQUE_PAIRS": 5964346.0,
-                "READS_IN_UNIQUE_UNPAIRED": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_OPTICAL": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_NONOPTICAL": 3759068.0,
-                "READS_IN_DUPLICATE_UNPAIRED": 0.0,
-                "READS_UNMAPPED": 0.0
-            },
-            "L3_Cd_20_rep1": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4818573.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 688864.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.14296,
-                "ESTIMATED_LIBRARY_SIZE": 15205161.0,
-                "READS_IN_DUPLICATE_PAIRS": 1377728.0,
-                "READS_IN_UNIQUE_PAIRS": 8259418.0,
-                "READS_IN_UNIQUE_UNPAIRED": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_OPTICAL": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_NONOPTICAL": 1377728.0,
-                "READS_IN_DUPLICATE_UNPAIRED": 0.0,
-                "READS_UNMAPPED": 0.0
-            },
-            "L3_Cd_20_rep2": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4761636.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 693569.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.145658,
-                "ESTIMATED_LIBRARY_SIZE": 14716230.0,
-                "READS_IN_DUPLICATE_PAIRS": 1387138.0,
-                "READS_IN_UNIQUE_PAIRS": 8136134.0,
-                "READS_IN_UNIQUE_UNPAIRED": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_OPTICAL": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_NONOPTICAL": 1387138.0,
-                "READS_IN_DUPLICATE_UNPAIRED": 0.0,
-                "READS_UNMAPPED": 0.0
-            },
-            "L3_Cd_0_rep3": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4841312.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 708734.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.146393,
-                "ESTIMATED_LIBRARY_SIZE": 14878774.0,
-                "READS_IN_DUPLICATE_PAIRS": 1417468.0,
-                "READS_IN_UNIQUE_PAIRS": 8265156.0,
-                "READS_IN_UNIQUE_UNPAIRED": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_OPTICAL": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_NONOPTICAL": 1417468.0,
-                "READS_IN_DUPLICATE_UNPAIRED": 0.0,
-                "READS_UNMAPPED": 0.0
-            },
-            "L3_Cd_20_rep3": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4866800.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 761967.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.156564,
-                "ESTIMATED_LIBRARY_SIZE": 13873948.0,
-                "READS_IN_DUPLICATE_PAIRS": 1523934.0,
-                "READS_IN_UNIQUE_PAIRS": 8209666.0,
-                "READS_IN_UNIQUE_UNPAIRED": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_OPTICAL": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_NONOPTICAL": 1523934.0,
-                "READS_IN_DUPLICATE_UNPAIRED": 0.0,
-                "READS_UNMAPPED": 0.0
-            },
-            "L3_Cd_0_rep2": {
-                "LIBRARY": "Unknown Library",
-                "UNPAIRED_READS_EXAMINED": 0.0,
-                "READ_PAIRS_EXAMINED": 4818650.0,
-                "SECONDARY_OR_SUPPLEMENTARY_RDS": 0.0,
-                "UNMAPPED_READS": 0.0,
-                "UNPAIRED_READ_DUPLICATES": 0.0,
-                "READ_PAIR_DUPLICATES": 724337.0,
-                "READ_PAIR_OPTICAL_DUPLICATES": 0.0,
-                "PERCENT_DUPLICATION": 0.150319,
-                "ESTIMATED_LIBRARY_SIZE": 14377980.0,
-                "READS_IN_DUPLICATE_PAIRS": 1448674.0,
-                "READS_IN_UNIQUE_PAIRS": 8188626.0,
-                "READS_IN_UNIQUE_UNPAIRED": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_OPTICAL": 0.0,
-                "READS_IN_DUPLICATE_PAIRS_NONOPTICAL": 1448674.0,
-                "READS_IN_DUPLICATE_UNPAIRED": 0.0,
-                "READS_UNMAPPED": 0.0
-            }
-        },
-        "multiqc_star": {
-            "L3_Cd_20_rep3-unsort": {
-                "total_reads": 4985526.0,
-                "avg_input_read_length": 294.0,
-                "uniquely_mapped": 4615425.0,
-                "uniquely_mapped_percent": 92.58,
-                "avg_mapped_read_length": 292.99,
-                "num_splices": 4098605.0,
-                "num_annotated_splices": 4068822.0,
-                "num_GTAG_splices": 4068308.0,
-                "num_GCAG_splices": 19222.0,
-                "num_ATAC_splices": 486.0,
-                "num_noncanonical_splices": 10589.0,
-                "mismatch_rate": 0.18,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.47,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.1,
-                "multimapped": 251375.0,
-                "multimapped_percent": 5.04,
-                "multimapped_toomany": 4029.0,
-                "multimapped_toomany_percent": 0.08,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.27,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 113201,
-                "unmapped_other": 1496
-            },
-            "L3_Cd_0_rep1-unsort": {
-                "total_reads": 4982616.0,
-                "avg_input_read_length": 293.0,
-                "uniquely_mapped": 3863401.0,
-                "uniquely_mapped_percent": 77.54,
-                "avg_mapped_read_length": 292.52,
-                "num_splices": 2356596.0,
-                "num_annotated_splices": 2331357.0,
-                "num_GTAG_splices": 2333583.0,
-                "num_GCAG_splices": 11861.0,
-                "num_ATAC_splices": 308.0,
-                "num_noncanonical_splices": 10844.0,
-                "mismatch_rate": 0.18,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.46,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.1,
-                "multimapped": 998306.0,
-                "multimapped_percent": 20.04,
-                "multimapped_toomany": 3056.0,
-                "multimapped_toomany_percent": 0.06,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.34,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 116361,
-                "unmapped_other": 1492
-            },
-            "L3_Cd_0_rep2-unsort": {
-                "total_reads": 4967142.0,
-                "avg_input_read_length": 294.0,
-                "uniquely_mapped": 4559082.0,
-                "uniquely_mapped_percent": 91.78,
-                "avg_mapped_read_length": 293.05,
-                "num_splices": 3956214.0,
-                "num_annotated_splices": 3919995.0,
-                "num_GTAG_splices": 3923410.0,
-                "num_GCAG_splices": 17539.0,
-                "num_ATAC_splices": 484.0,
-                "num_noncanonical_splices": 14781.0,
-                "mismatch_rate": 0.2,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.52,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.13,
-                "multimapped": 259568.0,
-                "multimapped_percent": 5.23,
-                "multimapped_toomany": 4592.0,
-                "multimapped_toomany_percent": 0.09,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.87,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 142411,
-                "unmapped_other": 1489
-            },
-            "L3_Cd_0_rep3-unsort": {
-                "total_reads": 4971401.0,
-                "avg_input_read_length": 293.0,
-                "uniquely_mapped": 4628221.0,
-                "uniquely_mapped_percent": 93.1,
-                "avg_mapped_read_length": 291.87,
-                "num_splices": 4113883.0,
-                "num_annotated_splices": 4080978.0,
-                "num_GTAG_splices": 4082695.0,
-                "num_GCAG_splices": 18817.0,
-                "num_ATAC_splices": 468.0,
-                "num_noncanonical_splices": 11903.0,
-                "mismatch_rate": 0.18,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.48,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.11,
-                "multimapped": 213091.0,
-                "multimapped_percent": 4.29,
-                "multimapped_toomany": 4022.0,
-                "multimapped_toomany_percent": 0.08,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 2.51,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 124578,
-                "unmapped_other": 1489
-            },
-            "L3_Cd_20_rep1-unsort": {
-                "total_reads": 4975482.0,
-                "avg_input_read_length": 296.0,
-                "uniquely_mapped": 4574366.0,
-                "uniquely_mapped_percent": 91.94,
-                "avg_mapped_read_length": 294.57,
-                "num_splices": 4057040.0,
-                "num_annotated_splices": 4027166.0,
-                "num_GTAG_splices": 4027849.0,
-                "num_GCAG_splices": 18689.0,
-                "num_ATAC_splices": 472.0,
-                "num_noncanonical_splices": 10030.0,
-                "mismatch_rate": 0.2,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.48,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.12,
-                "multimapped": 244207.0,
-                "multimapped_percent": 4.91,
-                "multimapped_toomany": 3676.0,
-                "multimapped_toomany_percent": 0.07,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 3.05,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 151740,
-                "unmapped_other": 1493
-            },
-            "L3_Cd_20_rep2-unsort": {
-                "total_reads": 4966139.0,
-                "avg_input_read_length": 295.0,
-                "uniquely_mapped": 4542041.0,
-                "uniquely_mapped_percent": 91.46,
-                "avg_mapped_read_length": 293.89,
-                "num_splices": 4030894.0,
-                "num_annotated_splices": 4000622.0,
-                "num_GTAG_splices": 4001565.0,
-                "num_GCAG_splices": 18007.0,
-                "num_ATAC_splices": 444.0,
-                "num_noncanonical_splices": 10878.0,
-                "mismatch_rate": 0.22,
-                "deletion_rate": 0.0,
-                "deletion_length": 1.51,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.14,
-                "multimapped": 219595.0,
-                "multimapped_percent": 4.42,
-                "multimapped_toomany": 3770.0,
-                "multimapped_toomany_percent": 0.08,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 4.01,
-                "unmapped_other_percent": 0.03,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 199242,
-                "unmapped_other": 1491
-            }
-        },
         "multiqc_fastqc": {
-            "L3_Cd_20_rep3_2": {
-                "Filename": "L3_Cd_20_rep3_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 47.0,
-                "total_deduplicated_percentage": 49.41973673342459,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "warn"
-            },
-            "L3_Cd_0_rep2_1": {
-                "Filename": "L3_Cd_0_rep2_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 47.0,
-                "total_deduplicated_percentage": 49.49647231052607,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "warn"
-            },
-            "L3_Cd_0_rep1_1": {
-                "Filename": "L3_Cd_0_rep1_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 48.0,
-                "total_deduplicated_percentage": 34.144670859704505,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "warn",
-                "adapter_content": "warn"
-            },
-            "L3_Cd_0_rep3_1": {
-                "Filename": "L3_Cd_0_rep3_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 47.0,
-                "total_deduplicated_percentage": 50.33658783435319,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "warn",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "warn"
-            },
-            "L3_Cd_0_rep3_2": {
-                "Filename": "L3_Cd_0_rep3_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 46.0,
-                "total_deduplicated_percentage": 50.932358431982024,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "warn",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "warn"
-            },
-            "L3_Cd_0_rep1_2": {
-                "Filename": "L3_Cd_0_rep1_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 48.0,
-                "total_deduplicated_percentage": 35.044130234363465,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "warn",
-                "adapter_content": "warn"
-            },
             "L3_Cd_20_rep2_2": {
                 "Filename": "L3_Cd_20_rep2_2.fastq.gz",
                 "File type": "Conventional base calls",
@@ -38120,36 +36420,15 @@
                 "overrepresented_sequences": "pass",
                 "adapter_content": "warn"
             },
-            "L3_Cd_20_rep3_1": {
-                "Filename": "L3_Cd_20_rep3_1.fastq.gz",
+            "L3_Cd_0_rep3_1": {
+                "Filename": "L3_Cd_0_rep3_1.fastq.gz",
                 "File type": "Conventional base calls",
                 "Encoding": "Sanger / Illumina 1.9",
                 "Total Sequences": 5000000.0,
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": 150.0,
                 "%GC": 47.0,
-                "total_deduplicated_percentage": 48.66150187753752,
-                "avg_sequence_length": 150.0,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "pass",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "warn"
-            },
-            "L3_Cd_0_rep2_2": {
-                "Filename": "L3_Cd_0_rep2_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 5000000.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": 150.0,
-                "%GC": 47.0,
-                "total_deduplicated_percentage": 50.5959970134394,
+                "total_deduplicated_percentage": 50.33658783435319,
                 "avg_sequence_length": 150.0,
                 "basic_statistics": "pass",
                 "per_base_sequence_quality": "pass",
@@ -38183,6 +36462,69 @@
                 "overrepresented_sequences": "pass",
                 "adapter_content": "warn"
             },
+            "L3_Cd_0_rep2_1": {
+                "Filename": "L3_Cd_0_rep2_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 47.0,
+                "total_deduplicated_percentage": 49.49647231052607,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "warn"
+            },
+            "L3_Cd_20_rep3_1": {
+                "Filename": "L3_Cd_20_rep3_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 47.0,
+                "total_deduplicated_percentage": 48.66150187753752,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "warn"
+            },
+            "L3_Cd_0_rep1_1": {
+                "Filename": "L3_Cd_0_rep1_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 48.0,
+                "total_deduplicated_percentage": 34.144670859704505,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "warn",
+                "adapter_content": "warn"
+            },
             "L3_Cd_20_rep1_1": {
                 "Filename": "L3_Cd_20_rep1_1.fastq.gz",
                 "File type": "Conventional base calls",
@@ -38203,6 +36545,27 @@
                 "sequence_duplication_levels": "warn",
                 "overrepresented_sequences": "pass",
                 "adapter_content": "pass"
+            },
+            "L3_Cd_0_rep3_2": {
+                "Filename": "L3_Cd_0_rep3_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 46.0,
+                "total_deduplicated_percentage": 50.932358431982024,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "warn",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "warn"
             },
             "L3_Cd_20_rep1_2": {
                 "Filename": "L3_Cd_20_rep1_2.fastq.gz",
@@ -38225,6 +36588,69 @@
                 "overrepresented_sequences": "pass",
                 "adapter_content": "pass"
             },
+            "L3_Cd_0_rep2_2": {
+                "Filename": "L3_Cd_0_rep2_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 47.0,
+                "total_deduplicated_percentage": 50.5959970134394,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "warn",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "warn"
+            },
+            "L3_Cd_20_rep3_2": {
+                "Filename": "L3_Cd_20_rep3_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 47.0,
+                "total_deduplicated_percentage": 49.41973673342459,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "warn"
+            },
+            "L3_Cd_0_rep1_2": {
+                "Filename": "L3_Cd_0_rep1_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 5000000.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": 150.0,
+                "%GC": 48.0,
+                "total_deduplicated_percentage": 35.044130234363465,
+                "avg_sequence_length": 150.0,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "pass",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "warn",
+                "adapter_content": "warn"
+            },
             "L3_Cd_20_rep2_trim_1": {
                 "Filename": "L3_Cd_20_rep2_trim_1.fastq.gz",
                 "File type": "Conventional base calls",
@@ -38233,8 +36659,134 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": "31-150",
                 "%GC": 46.0,
-                "total_deduplicated_percentage": 49.77208649984624,
+                "total_deduplicated_percentage": 49.77726004690608,
                 "avg_sequence_length": 147.79870881584264,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "pass"
+            },
+            "L3_Cd_0_rep3_trim_1": {
+                "Filename": "L3_Cd_0_rep3_trim_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4971401.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 46.0,
+                "total_deduplicated_percentage": 50.352333126797376,
+                "avg_sequence_length": 146.68930247228096,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "warn",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "pass"
+            },
+            "L3_Cd_20_rep1_trim_1": {
+                "Filename": "L3_Cd_20_rep1_trim_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4975482.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 46.0,
+                "total_deduplicated_percentage": 50.04874928087357,
+                "avg_sequence_length": 148.03140841430036,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "warn",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "pass"
+            },
+            "L3_Cd_0_rep2_trim_1": {
+                "Filename": "L3_Cd_0_rep2_trim_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4967142.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 47.0,
+                "total_deduplicated_percentage": 49.49002701929558,
+                "avg_sequence_length": 147.33525033107568,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "pass"
+            },
+            "L3_Cd_20_rep1_trim_2": {
+                "Filename": "L3_Cd_20_rep1_trim_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4975482.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 46.0,
+                "total_deduplicated_percentage": 51.32732895225553,
+                "avg_sequence_length": 148.03140841430036,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "warn",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "pass"
+            },
+            "L3_Cd_0_rep3_trim_2": {
+                "Filename": "L3_Cd_0_rep3_trim_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4971401.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 46.0,
+                "total_deduplicated_percentage": 50.88935723886354,
+                "avg_sequence_length": 146.68930247228096,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "warn",
+                "overrepresented_sequences": "pass",
+                "adapter_content": "pass"
+            },
+            "L3_Cd_20_rep3_trim_1": {
+                "Filename": "L3_Cd_20_rep3_trim_1.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4985526.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 46.0,
+                "total_deduplicated_percentage": 48.70838381477556,
+                "avg_sequence_length": 147.1834925743041,
                 "basic_statistics": "pass",
                 "per_base_sequence_quality": "pass",
                 "per_sequence_quality_scores": "pass",
@@ -38275,7 +36827,7 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": "31-150",
                 "%GC": 47.0,
-                "total_deduplicated_percentage": 34.139044098365716,
+                "total_deduplicated_percentage": 34.13511171255338,
                 "avg_sequence_length": 146.89740008060022,
                 "basic_statistics": "pass",
                 "per_base_sequence_quality": "pass",
@@ -38286,111 +36838,6 @@
                 "sequence_length_distribution": "warn",
                 "sequence_duplication_levels": "fail",
                 "overrepresented_sequences": "warn",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_0_rep1_trim_2": {
-                "Filename": "L3_Cd_0_rep1_trim_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4982616.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 47.0,
-                "total_deduplicated_percentage": 34.984891303423765,
-                "avg_sequence_length": 146.89740008060022,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "warn",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_0_rep3_trim_1": {
-                "Filename": "L3_Cd_0_rep3_trim_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4971401.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 46.0,
-                "total_deduplicated_percentage": 50.352333126797376,
-                "avg_sequence_length": 146.68930247228096,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "warn",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_0_rep3_trim_2": {
-                "Filename": "L3_Cd_0_rep3_trim_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4971401.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 46.0,
-                "total_deduplicated_percentage": 50.88935723886354,
-                "avg_sequence_length": 146.68930247228096,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "warn",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_20_rep1_trim_1": {
-                "Filename": "L3_Cd_20_rep1_trim_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4975482.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 46.0,
-                "total_deduplicated_percentage": 50.04874928087357,
-                "avg_sequence_length": 148.03140841430036,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "warn",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_20_rep1_trim_2": {
-                "Filename": "L3_Cd_20_rep1_trim_2.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4975482.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 46.0,
-                "total_deduplicated_percentage": 51.32732895225553,
-                "avg_sequence_length": 148.03140841430036,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "warn",
-                "overrepresented_sequences": "pass",
                 "adapter_content": "pass"
             },
             "L3_Cd_20_rep3_trim_2": {
@@ -38401,50 +36848,8 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": "31-150",
                 "%GC": 46.0,
-                "total_deduplicated_percentage": 49.41114897221655,
+                "total_deduplicated_percentage": 49.41258587114283,
                 "avg_sequence_length": 147.1834925743041,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_20_rep3_trim_1": {
-                "Filename": "L3_Cd_20_rep3_trim_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4985526.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 46.0,
-                "total_deduplicated_percentage": 48.70838381477556,
-                "avg_sequence_length": 147.1834925743041,
-                "basic_statistics": "pass",
-                "per_base_sequence_quality": "pass",
-                "per_sequence_quality_scores": "pass",
-                "per_base_sequence_content": "fail",
-                "per_sequence_gc_content": "warn",
-                "per_base_n_content": "pass",
-                "sequence_length_distribution": "warn",
-                "sequence_duplication_levels": "fail",
-                "overrepresented_sequences": "pass",
-                "adapter_content": "pass"
-            },
-            "L3_Cd_0_rep2_trim_1": {
-                "Filename": "L3_Cd_0_rep2_trim_1.fastq.gz",
-                "File type": "Conventional base calls",
-                "Encoding": "Sanger / Illumina 1.9",
-                "Total Sequences": 4967142.0,
-                "Sequences flagged as poor quality": 0.0,
-                "Sequence length": "31-150",
-                "%GC": 47.0,
-                "total_deduplicated_percentage": 49.49002701929558,
-                "avg_sequence_length": 147.33525033107568,
                 "basic_statistics": "pass",
                 "per_base_sequence_quality": "pass",
                 "per_sequence_quality_scores": "pass",
@@ -38476,141 +36881,30 @@
                 "sequence_duplication_levels": "warn",
                 "overrepresented_sequences": "pass",
                 "adapter_content": "pass"
+            },
+            "L3_Cd_0_rep1_trim_2": {
+                "Filename": "L3_Cd_0_rep1_trim_2.fastq.gz",
+                "File type": "Conventional base calls",
+                "Encoding": "Sanger / Illumina 1.9",
+                "Total Sequences": 4982616.0,
+                "Sequences flagged as poor quality": 0.0,
+                "Sequence length": "31-150",
+                "%GC": 47.0,
+                "total_deduplicated_percentage": 34.984891303423765,
+                "avg_sequence_length": 146.89740008060022,
+                "basic_statistics": "pass",
+                "per_base_sequence_quality": "pass",
+                "per_sequence_quality_scores": "pass",
+                "per_base_sequence_content": "fail",
+                "per_sequence_gc_content": "warn",
+                "per_base_n_content": "pass",
+                "sequence_length_distribution": "warn",
+                "sequence_duplication_levels": "fail",
+                "overrepresented_sequences": "warn",
+                "adapter_content": "pass"
             }
         },
         "multiqc_general_stats": {
-            "L3_Cd_0_rep1.markdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 76.77369286137564,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 7465024
-            },
-            "L3_Cd_20_rep2.markdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.69995648554405,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 8828069
-            },
-            "L3_Cd_20_rep3.markdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.1518862496918,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 8969696
-            },
-            "L3_Cd_0_rep3.markdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.85510828469637,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 8990811
-            },
-            "L3_Cd_0_rep2.markdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 91.99968870949333,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 8866286
-            },
-            "L3_Cd_20_rep1.markdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.10529756423738,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 8876322
-            },
-            "L3_Cd_0_rep1.rmdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 85.51931762510088,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 5100668
-            },
-            "L3_Cd_0_rep3.rmdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.90289257698221,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 7678569
-            },
-            "L3_Cd_0_rep2.rmdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.2500551374553,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 7554012
-            },
-            "L3_Cd_20_rep2.rmdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.72824169316779,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 7544494
-            },
-            "L3_Cd_20_rep3.rmdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.41360123542177,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 7586848
-            },
-            "L3_Cd_20_rep1.rmdup": {
-                "featureCounts_mqc-generalstats-featurecounts-percent_assigned": 92.403871556083,
-                "featureCounts_mqc-generalstats-featurecounts-Assigned": 7632022
-            },
-            "L3_Cd_0_rep1": {
-                "Picard_mqc-generalstats-picard-PERCENT_DUPLICATION": 0.3866
-            },
-            "L3_Cd_20_rep1": {
-                "Picard_mqc-generalstats-picard-PERCENT_DUPLICATION": 0.14296
-            },
-            "L3_Cd_20_rep2": {
-                "Picard_mqc-generalstats-picard-PERCENT_DUPLICATION": 0.145658
-            },
-            "L3_Cd_0_rep3": {
-                "Picard_mqc-generalstats-picard-PERCENT_DUPLICATION": 0.146393
-            },
-            "L3_Cd_20_rep3": {
-                "Picard_mqc-generalstats-picard-PERCENT_DUPLICATION": 0.156564
-            },
-            "L3_Cd_0_rep2": {
-                "Picard_mqc-generalstats-picard-PERCENT_DUPLICATION": 0.150319
-            },
-            "L3_Cd_20_rep3-unsort": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 92.58,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 4615425.0
-            },
-            "L3_Cd_0_rep1-unsort": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 77.54,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 3863401.0
-            },
-            "L3_Cd_0_rep2-unsort": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 91.78,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 4559082.0
-            },
-            "L3_Cd_0_rep3-unsort": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 93.1,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 4628221.0
-            },
-            "L3_Cd_20_rep1-unsort": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 91.94,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 4574366.0
-            },
-            "L3_Cd_20_rep2-unsort": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 91.46,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 4542041.0
-            },
-            "L3_Cd_20_rep3_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.58026326657541,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
-            "L3_Cd_0_rep2_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.50352768947393,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
-            "L3_Cd_0_rep1_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 65.8553291402955,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 48.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
-            "L3_Cd_0_rep3_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.66341216564681,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
-            "L3_Cd_0_rep3_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.067641568017976,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
-            "L3_Cd_0_rep1_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 64.95586976563654,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 48.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
             "L3_Cd_20_rep2_2": {
                 "FastQC_mqc-generalstats-fastqc-percent_duplicates": 48.39831557346671,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
@@ -38618,15 +36912,8 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
             },
-            "L3_Cd_20_rep3_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 51.33849812246248,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
-            },
-            "L3_Cd_0_rep2_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.4040029865606,
+            "L3_Cd_0_rep3_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.66341216564681,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
@@ -38639,8 +36926,36 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
             },
+            "L3_Cd_0_rep2_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.50352768947393,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
+            "L3_Cd_20_rep3_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 51.33849812246248,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
+            "L3_Cd_0_rep1_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 65.8553291402955,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 48.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
             "L3_Cd_20_rep1_1": {
                 "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.94454930244376,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
+            "L3_Cd_0_rep3_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.067641568017976,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
@@ -38653,43 +36968,36 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
             },
-            "L3_Cd_20_rep2_trim_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.22791350015376,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.79870881584264,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 4966139.0
-            },
-            "L3_Cd_20_rep2_trim_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 48.47791873794959,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.79870881584264,
+            "L3_Cd_0_rep2_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.4040029865606,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
+            "L3_Cd_20_rep3_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.58026326657541,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
+            "L3_Cd_0_rep1_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 64.95586976563654,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 48.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 150.0,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 5000000.0
+            },
+            "L3_Cd_20_rep2_trim_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.22273995309392,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.79870881584264,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 4966139.0
-            },
-            "L3_Cd_0_rep1_trim_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 65.86095590163428,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.89740008060022,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 4982616.0
-            },
-            "L3_Cd_0_rep1_trim_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 65.01510869657623,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.89740008060022,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 4982616.0
             },
             "L3_Cd_0_rep3_trim_1": {
                 "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.647666873202624,
-                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.68930247228096,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 4971401.0
-            },
-            "L3_Cd_0_rep3_trim_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.11064276113646,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.68930247228096,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
@@ -38702,6 +37010,13 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 4975482.0
             },
+            "L3_Cd_0_rep2_trim_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.50997298070442,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.33525033107568,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 4967142.0
+            },
             "L3_Cd_20_rep1_trim_2": {
                 "FastQC_mqc-generalstats-fastqc-percent_duplicates": 48.67267104774447,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
@@ -38709,12 +37024,12 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 4975482.0
             },
-            "L3_Cd_20_rep3_trim_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.58885102778345,
+            "L3_Cd_0_rep3_trim_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.11064276113646,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.1834925743041,
-                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 4985526.0
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.68930247228096,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 4971401.0
             },
             "L3_Cd_20_rep3_trim_1": {
                 "FastQC_mqc-generalstats-fastqc-percent_duplicates": 51.29161618522444,
@@ -38723,12 +37038,26 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 4985526.0
             },
-            "L3_Cd_0_rep2_trim_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.50997298070442,
+            "L3_Cd_20_rep2_trim_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 48.47791873794959,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.79870881584264,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 4966139.0
+            },
+            "L3_Cd_0_rep1_trim_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 65.86488828744662,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
-                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.33525033107568,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.89740008060022,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
-                "FastQC_mqc-generalstats-fastqc-total_sequences": 4967142.0
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 4982616.0
+            },
+            "L3_Cd_20_rep3_trim_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 50.58741412885717,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 46.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.1834925743041,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 4985526.0
             },
             "L3_Cd_0_rep2_trim_2": {
                 "FastQC_mqc-generalstats-fastqc-percent_duplicates": 49.45964256366221,
@@ -38736,16 +37065,23 @@
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 147.33525033107568,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 4967142.0
+            },
+            "L3_Cd_0_rep1_trim_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 65.01510869657623,
+                "FastQC_mqc-generalstats-fastqc-percent_gc": 47.0,
+                "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 146.89740008060022,
+                "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
+                "FastQC_mqc-generalstats-fastqc-total_sequences": 4982616.0
             }
         }
     },
     "config_analysis_dir_abs": [
-        "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm"
+        "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm"
     ],
     "config_analysis_dir": [
-        "/mnt/scratch15/smbpk/transcript_reads2DEGs_slurm"
+        "/mnt/ecotox/GROUP-smbpk/smbpk/transcript_reads2DEGs_slurm"
     ],
-    "config_creation_date": "2025-05-07, 19:04",
+    "config_creation_date": "2025-05-14, 08:45",
     "config_git_hash": null,
     "config_intro_text": null,
     "config_report_comment": null,

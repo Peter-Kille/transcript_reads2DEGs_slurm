@@ -1,7 +1,7 @@
 Sample	Filename	File type	Encoding	Total Sequences	Sequences flagged as poor quality	Sequence length	%GC	total_deduplicated_percentage	avg_sequence_length	basic_statistics	per_base_sequence_quality	per_sequence_quality_scores	per_base_sequence_content	per_sequence_gc_content	per_base_n_content	sequence_length_distribution	sequence_duplication_levels	overrepresented_sequences	adapter_content
 L3_Cd_0_rep1_1	L3_Cd_0_rep1_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	48.0	34.144670859704505	150.0	pass	pass	pass	fail	warn	pass	pass	fail	warn	warn
 L3_Cd_0_rep1_2	L3_Cd_0_rep1_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	48.0	35.044130234363465	150.0	pass	pass	pass	fail	warn	pass	pass	fail	warn	warn
-L3_Cd_0_rep1_trim_1	L3_Cd_0_rep1_trim_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4982616.0	0.0	31-150	47.0	34.139044098365716	146.89740008060022	pass	pass	pass	fail	warn	pass	warn	fail	warn	pass
+L3_Cd_0_rep1_trim_1	L3_Cd_0_rep1_trim_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4982616.0	0.0	31-150	47.0	34.13511171255338	146.89740008060022	pass	pass	pass	fail	warn	pass	warn	fail	warn	pass
 L3_Cd_0_rep1_trim_2	L3_Cd_0_rep1_trim_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4982616.0	0.0	31-150	47.0	34.984891303423765	146.89740008060022	pass	pass	pass	fail	warn	pass	warn	fail	warn	pass
 L3_Cd_0_rep2_1	L3_Cd_0_rep2_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	47.0	49.49647231052607	150.0	pass	pass	pass	fail	warn	pass	pass	fail	pass	warn
 L3_Cd_0_rep2_2	L3_Cd_0_rep2_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	47.0	50.5959970134394	150.0	pass	pass	pass	fail	warn	pass	pass	warn	pass	warn
@@ -17,9 +17,9 @@ L3_Cd_20_rep1_trim_1	L3_Cd_20_rep1_trim_1.fastq.gz	Conventional base calls	Sange
 L3_Cd_20_rep1_trim_2	L3_Cd_20_rep1_trim_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4975482.0	0.0	31-150	46.0	51.32732895225553	148.03140841430036	pass	pass	pass	fail	warn	pass	warn	warn	pass	pass
 L3_Cd_20_rep2_1	L3_Cd_20_rep2_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	47.0	49.73669930238343	150.0	pass	pass	pass	fail	warn	pass	pass	fail	pass	warn
 L3_Cd_20_rep2_2	L3_Cd_20_rep2_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	47.0	51.60168442653329	150.0	pass	pass	pass	fail	warn	pass	pass	warn	pass	warn
-L3_Cd_20_rep2_trim_1	L3_Cd_20_rep2_trim_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4966139.0	0.0	31-150	46.0	49.77208649984624	147.79870881584264	pass	pass	pass	fail	warn	pass	warn	fail	pass	pass
+L3_Cd_20_rep2_trim_1	L3_Cd_20_rep2_trim_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4966139.0	0.0	31-150	46.0	49.77726004690608	147.79870881584264	pass	pass	pass	fail	warn	pass	warn	fail	pass	pass
 L3_Cd_20_rep2_trim_2	L3_Cd_20_rep2_trim_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4966139.0	0.0	31-150	46.0	51.52208126205041	147.79870881584264	pass	pass	pass	fail	warn	pass	warn	warn	pass	pass
 L3_Cd_20_rep3_1	L3_Cd_20_rep3_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	47.0	48.66150187753752	150.0	pass	pass	pass	fail	warn	pass	pass	fail	pass	warn
 L3_Cd_20_rep3_2	L3_Cd_20_rep3_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	5000000.0	0.0	150.0	47.0	49.41973673342459	150.0	pass	pass	pass	fail	warn	pass	pass	fail	pass	warn
 L3_Cd_20_rep3_trim_1	L3_Cd_20_rep3_trim_1.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4985526.0	0.0	31-150	46.0	48.70838381477556	147.1834925743041	pass	pass	pass	fail	warn	pass	warn	fail	pass	pass
-L3_Cd_20_rep3_trim_2	L3_Cd_20_rep3_trim_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4985526.0	0.0	31-150	46.0	49.41114897221655	147.1834925743041	pass	pass	pass	fail	warn	pass	warn	fail	pass	pass
+L3_Cd_20_rep3_trim_2	L3_Cd_20_rep3_trim_2.fastq.gz	Conventional base calls	Sanger / Illumina 1.9	4985526.0	0.0	31-150	46.0	49.41258587114283	147.1834925743041	pass	pass	pass	fail	warn	pass	warn	fail	pass	pass
