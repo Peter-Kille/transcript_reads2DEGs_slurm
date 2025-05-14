@@ -1,7 +1,7 @@
-genome/
+genome_test/
 outdir/
 R_Libs/
 singularities/
-source_data/
+source_data_test/
 work/
 pandoc/

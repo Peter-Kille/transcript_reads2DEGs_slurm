@@ -97,12 +97,32 @@ if [[ ! -d "${stardir}" ]]; then
         mkdir -p "${stardir}"
 fi
 
+genome=$(basename $(ls "${pipedir}/genome/"*".fasta"))
+annot=$(basename $(ls "${pipedir}/genome/"*".gtf"))
+
+# Check if genome is set (required)
+if [[ -z "$genome" ]]; then
+  echo "Error: your genome file is missing - a uncompressed genome file ending .fasta should be placed in the genome directory."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+# Check if annotation file is set (required)
+if [[ -z "$annot" ]]; then
+  echo "Error: your annotation file is missing - nake sure your .gtf annotation file is in your genome directory."
+  echo "Use --help for usage."
+  exit 1
+fi
+
 star_module="STAR/2.7.6a"
 module is-avail ${star_module} || { echo "${star_module} not avalible check config.parameters_all file" ; exit 1; }
 export star_module
 export stardir
 export genomedir
 export len=149
+export genome
+export annot
+
 
 #STEP 4: markdups
 markdir="${workdir}/markdups"
