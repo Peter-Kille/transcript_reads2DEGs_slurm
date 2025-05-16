@@ -24,4 +24,3 @@ multiqc ${pipedir} --outdir ${multiqcdir}/
 
 mkdir ${outdir}/multiqc
 cp -R ${multiqcdir}/* ${outdir}/multiqc/
-

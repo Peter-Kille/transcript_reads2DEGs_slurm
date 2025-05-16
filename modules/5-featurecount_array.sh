@@ -35,3 +35,5 @@ featureCounts \
 	-o ${fcdir}/${base}.rmdup.featurecount \
 	${markdir}/${base}.rmdup.bam
 
+cp -R ${fcdir} ${outdir}/
+

@@ -21,3 +21,5 @@ cat $0
 module load ${r_module}
 
 Rscript modules/scripts/Sartools-template-deseq2-dev.r
+
+cp -R ${rdir} ${outdir}/
