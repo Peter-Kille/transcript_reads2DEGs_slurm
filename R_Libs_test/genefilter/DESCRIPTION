@@ -1,0 +1,47 @@
+Package: genefilter
+Title: genefilter: methods for filtering genes from high-throughput
+        experiments
+Version: 1.84.0
+Authors@R: c(
+        person("Robert", "Gentleman", role = "aut"),
+        person("Vincent J.", "Carey", role = "aut"),
+        person("Wolfgang", "Huber", role = "aut"),
+        person("Florian", "Hahne", role = "aut"),
+        person("Emmanuel", "Taiwo", role = "ctb",
+                comment = "'howtogenefinder' vignette translation from Sweave to RMarkdown / HTML."),
+        person("Khadijah", "Amusat", role = "ctb",
+                comment = "Converted genefilter vignette from Sweave to RMarkdown / HTML."),
+        person("Bioconductor Package Maintainer", role = "cre",
+                email = "maintainer@bioconductor.org"))
+Description: Some basic functions for filtering genes.
+Suggests: class, hgu95av2.db, tkWidgets, ALL, ROC, RColorBrewer,
+        BiocStyle, knitr
+Imports: MatrixGenerics (>= 1.11.1), AnnotationDbi, annotate, Biobase,
+        graphics, methods, stats, survival, grDevices
+License: Artistic-2.0
+LazyLoad: yes
+LazyData: yes
+Collate: AllClasses.R AllGenerics.R all.R dist2.R eSetFilter.R fastT.R
+        filter_volcano.R filtered_p.R genefinder.R half.range.mode.R
+        kappa_p.R nsFilter.R rejection_plot.R rowROC-accessors.R
+        rowSds.R rowpAUCs-methods.R rowttests-methods.R shorth.R zzz.R
+biocViews: Microarray
+VignetteBuilder: knitr
+git_url: https://git.bioconductor.org/packages/genefilter
+git_branch: RELEASE_3_18
+git_last_commit: 94eca03
+git_last_commit_date: 2023-10-24
+Date/Publication: 2023-10-24
+NeedsCompilation: yes
+Packaged: 2023-10-24 21:18:21 UTC; biocbuild
+Author: Robert Gentleman [aut],
+  Vincent J. Carey [aut],
+  Wolfgang Huber [aut],
+  Florian Hahne [aut],
+  Emmanuel Taiwo [ctb] ('howtogenefinder' vignette translation from
+    Sweave to RMarkdown / HTML.),
+  Khadijah Amusat [ctb] (Converted genefilter vignette from Sweave to
+    RMarkdown / HTML.),
+  Bioconductor Package Maintainer [cre]
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+Built: R 4.4.3; x86_64-pc-linux-gnu; 2025-05-14 08:25:15 UTC; unix

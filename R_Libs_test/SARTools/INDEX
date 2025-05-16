@@ -1,0 +1,43 @@
+BCVPlot                 BCV plot (for edgeR dispersions)
+MAPlot                  MA-plots
+MDSPlot                 MDS plot (for edgeR objects)
+PCAPlot                 PCA of samples (if use of DESeq2)
+SARTools-package        Statistical Analysis of RNA-Seq Tools
+SERE                    Pairwise SERE for two samples
+barplotNull             Percentage of null counts per sample
+barplotTotal            Total number of reads per sample
+cairoSizeWrapper        Cairo Size Wrapper
+checkParameters.DESeq2
+                        Check the parameters (when using DESeq2)
+checkParameters.edgeR   Check the parameters (when using edgeR)
+clusterPlot             Clustering of the samples
+countsBoxplots          Box-plots of (normalized) counts distribution
+                        per sample
+densityPlot             Density plot of all samples
+descriptionPlots        Description plots of the counts
+diagSizeFactorsPlots    Assess the estimations of the size factors
+dispersionsPlot         Plots about DESeq2 dispersions
+exploreCounts           Explore counts structure
+exportResults.DESeq2    Export results for DESeq2 analyses
+exportResults.edgeR     Export results for edgeR analyses
+loadCountData           Load count files
+loadTargetFile          Load target file
+majSequences            Most expressed sequences per sample
+nDiffTotal              Number of differentially expressed features per
+                        comparison
+pairwiseScatterPlots    Scatter plots for pairwise comparaisons of log
+                        counts
+rawpHist                Histograms of raw p-values
+removeNull              Remove features with null counts in all samples
+run.DESeq2              Wrapper to run DESeq2
+run.edgeR               Wrapper to run edgeR
+summarizeResults.DESeq2
+                        Summarize DESeq2 analysis
+summarizeResults.edgeR
+                        Summarize edgeR analysis
+tabIndepFiltering       Table of the number of features discarded by
+                        the independent filtering (if use of DESeq2)
+tabSERE                 SERE statistics for several samples
+volcanoPlot             Volcano plots
+writeReport.DESeq2      Write HTML report for DESeq2 analyses
+writeReport.edgeR       Write HTML report for edgeR analyses

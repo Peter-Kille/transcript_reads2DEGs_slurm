@@ -1,0 +1,135 @@
+ash                     Adaptive Shrinkage
+ash_pois                Performs adaptive shrinkage on Poisson data
+ashci                   Credible Interval Computation for the ash
+                        object
+ashr                    ashr
+calc_logLR              Compute loglikelihood ratio for data from ash
+                        fit
+calc_loglik             Compute loglikelihood for data from ash fit
+calc_mixmean            Generic function of calculating the overall
+                        mean of the mixture
+calc_mixsd              Generic function of calculating the overall
+                        standard deviation of the mixture
+calc_null_loglik        Compute loglikelihood for data under null that
+                        all beta are 0
+calc_null_vloglik       Compute vector of loglikelihood for data under
+                        null that all beta are 0
+calc_vlogLR             Compute vector of loglikelihood ratio for data
+                        from ash fit
+calc_vloglik            Compute vector of loglikelihood for data from
+                        ash fit
+cdf.ash                 cdf method for ash object
+cdf_conv                cdf_conv
+cdf_post                cdf_post
+comp_cdf                Generic function of computing the cdf for each
+                        component
+comp_cdf_conv           comp_cdf_conv
+comp_cdf_conv.normalmix
+                        comp_cdf_conv.normalmix
+comp_cdf_conv.unimix    cdf of convolution of each component of a unif
+                        mixture
+comp_cdf_post           comp_cdf_post
+comp_dens               Generic function of calculating the component
+                        densities of the mixture
+comp_dens_conv          comp_dens_conv
+comp_dens_conv.normalmix
+                        comp_dens_conv.normalmix
+comp_dens_conv.unimix   density of convolution of each component of a
+                        unif mixture
+comp_mean               Generic function of calculating the first
+                        moment of components of the mixture
+comp_mean.normalmix     comp_mean.normalmix
+comp_mean.tnormalmix    comp_mean.tnormalmix
+comp_mean2              Generic function of calculating the second
+                        moment of components of the mixture
+comp_postmean           comp_postmean
+comp_postmean2          comp_postmean2
+comp_postprob           comp_postprob
+comp_postsd             comp_postsd
+comp_sd                 Generic function to extract the standard
+                        deviations of components of the mixture
+comp_sd.normalmix       comp_sd.normalmix
+comp_sd.tnormalmix      comp_sd.normalmix
+compute_lfsr            Function to compute the local false sign rate
+cxxMixSquarem           Brief description of function.
+dens                    Find density at y, a generic function
+dens_conv               dens_conv
+dlogf                   The log-F distribution
+estimate_mixprop        Estimate mixture proportions of a mixture g
+                        given noisy (error-prone) data from that
+                        mixture.
+gen_etruncFUN           gen_etruncFUN
+get_density             Density method for ash object
+get_lfsr                Return lfsr from an ash object
+get_post_sample         Sample from posterior
+igmix                   Constructor for igmix class
+lik_binom               Likelihood object for Binomial error
+                        distribution
+lik_logF                Likelihood object for logF error distribution
+lik_normal              Likelihood object for normal error distribution
+lik_normalmix           Likelihood object for normal mixture error
+                        distribution
+lik_pois                Likelihood object for Poisson error
+                        distribution
+lik_t                   Likelihood object for t error distribution
+log_comp_dens_conv      log_comp_dens_conv
+log_comp_dens_conv.normalmix
+                        log_comp_dens_conv.normalmix
+log_comp_dens_conv.unimix
+                        log density of convolution of each component of
+                        a unif mixture
+loglik_conv             loglik_conv
+loglik_conv.default     loglik_conv.default
+mixEM                   Estimate mixture proportions of a mixture model
+                        by EM algorithm
+mixIP                   Estimate mixture proportions of a mixture model
+                        by Interior Point method
+mixSQP                  Estimate mixture proportions of a mixture model
+                        using mix-SQP algorithm.
+mixVBEM                 Estimate posterior distribution on mixture
+                        proportions of a mixture model by a Variational
+                        Bayes EM algorithm
+mixcdf                  mixcdf
+mixcdf.default          mixcdf.default
+mixmean2                Generic function of calculating the overall
+                        second moment of the mixture
+mixprop                 Generic function of extracting the mixture
+                        proportions
+my_e2truncbeta          second moment of truncated Beta distribution
+my_e2truncgamma         second moment of truncated gamma distribution
+my_e2truncnorm          Expected Squared Value of Truncated Normal
+my_e2trunct             my_e2trunct
+my_etruncbeta           mean of truncated Beta distribution
+my_etruncgamma          mean of truncated gamma distribution
+my_etrunclogf           my_etrunclogf
+my_etruncnorm           Expected Value of Truncated Normal
+my_etrunct              my_etrunct
+my_vtruncnorm           Variance of Truncated Normal
+ncomp                   ncomp
+ncomp.default           ncomp.default
+normalmix               Constructor for normalmix class
+pcdf_post               pcdf_post
+plogf                   The log-F distribution
+plot.ash                Plot method for ash object
+plot_diagnostic         Diagnostic plots for ash object
+pm_on_zero              Generic function to extract which components of
+                        mixture are point mass on 0
+post_sample             post_sample
+post_sample.normalmix   post_sample.normalmix
+post_sample.unimix      post_sample.unimix
+posterior_dist          Compute Posterior
+postmean                postmean
+postmean2               postmean2
+postsd                  postsd
+print.ash               Print method for ash object
+prune                   prune
+qval.from.lfdr          Function to compute q values from local false
+                        discovery rates
+set_data                Takes raw data and sets up data object for use
+                        by ash
+summary.ash             Summary method for ash object
+tnormalmix              Constructor for tnormalmix class
+unimix                  Constructor for unimix class
+vcdf_post               vcdf_post
+w_mixEM                 Estimate mixture proportions of a mixture model
+                        by EM algorithm (weighted version)

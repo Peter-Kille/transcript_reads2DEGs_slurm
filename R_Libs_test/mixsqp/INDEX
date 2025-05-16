@@ -1,0 +1,9 @@
+mixobjective            Compute objective optimized by mixsqp.
+mixsqp                  Maximum-likelihood estimation of mixture
+                        proportions using SQP
+mixsqp-package          mixsqp: Sequential Quadratic Programming for
+                        Fast Maximum-Likelihood Estimation of Mixture
+                        Proportions
+simulatemixdata         Create likelihood matrix from simulated data
+                        set
+tacks                   Beckett & Diaconis tack rolling example.
