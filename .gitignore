@@ -3,7 +3,6 @@ outdir/
 R_Libs/
 singularities/
 source_data_test/
-R_Libs_test/
 work/
 pandoc/
 pandoc-3.6.4-linux-amd64.tar.gz

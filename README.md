@@ -15,12 +15,12 @@ A SLURM pipeline designed for illumina data using (star)[https://github.com/alex
 1. Install the metagenome_slurm resources into your HPC cluster directory in which you will be performing the assembly:  
 
 ```
-git clone git@github.com:Peter-Kille/transcript_reads2DEGs_slurm.git
+git clone https://github.com/Peter-Kille/transcript_reads2DEGs_slurm.git
 ```
 
-2. Put the raw reads in `raw_data` folder.  
+2. Put the raw reads and metadata in `source_data` folder and genome (.fasta) and annotation (.gtf) in `genome` folder.  
 
-3. Run the pipeline using `./deploy.sh -p [slurm queue / partition] -n [unique name for run]`  
+3. Run the pipeline using `./deploy.sh -n [NAME] -p [PARTITION] -m [METADATA] -t [TREATMENT] -r [REFERENCE]`  
 
 4. you can you './deploy.sh -h' for help (see below)
 
