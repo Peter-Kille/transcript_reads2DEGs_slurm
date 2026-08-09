@@ -10,7 +10,7 @@ treatment=""
 ref=""
 
 # Allowed environments
-VALID_PART=("epyc" "defq" "epyc_ssd" "epyc -w f02-14" "epyc -w f02-13")
+VALID_PART=("epyc" "defq" "epyc_ssd" "epyc -w c1-29" "epyc -w c1-31" "epyc -w c1-34")
 
 # Validate partition
 validate_partition() {

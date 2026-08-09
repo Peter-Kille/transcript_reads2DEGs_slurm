@@ -1,0 +1,144 @@
+#!/bin/bash
+
+# define host directory
+pipedir=$(pwd -P)
+
+# define module, script and container based locations
+moduledir="${pipedir}/modules"
+scriptdir="${moduledir}/scripts"
+singularitydir="${moduledir}/singularities"
+programdir="${moduledir}/programs"
+
+# Create Singularity cache directory in /tmp and set environment variables
+if [[ ! -d "${singularitydir}" ]]; then
+        mkdir -p "${singularitydir}"
+fi
+
+if [[ ! -d "${singularitydir}/cache" ]]; then
+        mkdir -p "${singularitydir}/cache"
+fi
+
+export APTAINERAPTAINER_CACHEDIR=${singularitydir}/cache
+export APPTAINER_CACHEDIR=${singularitydir}/cache
+
+# Define data directories - workdir and output directories
+
+sourcedir="${pipedir}/source_data"
+
+workdir="${pipedir}/work"
+if [[ ! -d ${workdir} ]]; then
+        mkdir -p ${workdir}
+fi
+
+outdir="${pipedir}/outdir"
+if [[ ! -d "${outdir}" ]]; then
+        mkdir -p "${outdir}"
+fi
+
+log="${workdir}/0_log"
+if [[ ! -d "${log}" ]]; then
+        mkdir -p "${log}"
+fi
+
+# Export core parameters
+export sourcedir
+export pipedir
+export workdir
+export outdir
+export moduledir
+export programdir
+export log
+export singularitydir
+export scriptdir
+
+# Step 1: Rename and Count
+rawdir="${workdir}/1_raw_data"
+if [[ ! -d "${rawdir}" ]]; then 
+	mkdir -p "${rawdir}" 
+fi
+export rawdir
+
+# STEP 2A: fastqc on raw data
+qcdir="${workdir}/2A_rawqc" 
+if [[ ! -d "${qcdir}" ]]; then 
+	mkdir -p "${qcdir}" 
+fi
+export qcdir
+
+# STEP 2B fastp trim
+trimdir="${workdir}/2B_trim_files"
+if [[ ! -d "${trimdir}" ]]; then
+        mkdir -p "${trimdir}"
+fi
+export trimdir
+
+#STEP 2C: qc trim reads
+trimqc="${workdir}/2C_trimqc"
+if [[ ! -d "${trimqc}" ]]; then
+        mkdir -p "${trimqc}"
+fi
+export trimqc
+
+#STEP 3A 3B: star library index and star mapping
+genomedir="${workdir}/3A_genome"
+if [[ ! -d "${genomedir}" ]]; then
+        mkdir -p "${genomedir}"
+fi
+
+stardir="${workdir}/3B_star"
+if [[ ! -d "${stardir}" ]]; then
+        mkdir -p "${stardir}"
+fi
+
+genome=$(basename $(ls "${pipedir}/genome/"*".fasta"))
+annot=$(basename $(ls "${pipedir}/genome/"*".gtf"))
+
+# Check if genome is set (required)
+if [[ -z "$genome" ]]; then
+  echo "Error: your genome file is missing - a uncompressed genome file ending .fasta should be placed in the genome directory."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+# Check if annotation file is set (required)
+if [[ -z "$annot" ]]; then
+  echo "Error: your annotation file is missing - nake sure your .gtf annotation file is in your genome directory."
+  echo "Use --help for usage."
+  exit 1
+fi
+
+export stardir
+export genomedir
+export len=74
+export genome
+export annot
+
+#STEP 4: mapping QC
+mapqcdir="${workdir}/4_mapqc"
+if [[ ! -d "${mapqcdir}" ]]; then
+        mkdir -p "${mapqcdir}"
+fi
+export mapqcdir
+
+#STEP 5: feature count
+fcdir="${workdir}/5_featurecounts"
+if [[ ! -d "${fcdir}" ]]; then
+        mkdir -p "${fcdir}"
+fi
+export fcdir
+
+#STEP 6: SARTools
+sartoolsdir="${workdir}/6_sartools"
+if [[ ! -d "${sartoolsdir}" ]]; then
+        mkdir -p "${sartoolsdir}"
+fi
+export sartoolsdir
+
+# STEP X:
+multiqcdir="${workdir}/X_multiqc"
+if [[ ! -d "${multiqcdir}" ]]; then
+        mkdir -p "${multiqcdir}"
+fi
+export multiqcdir
+
+
