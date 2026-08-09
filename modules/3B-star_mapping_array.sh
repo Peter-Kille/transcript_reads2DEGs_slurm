@@ -26,6 +26,7 @@ base=${sample_array[$SLURM_ARRAY_TASK_ID]}
 # map forward and reverse reads to genome
 STAR   --outMultimapperOrder Random \
        --outSAMmultNmax 1 \
+       --outSAMattrRGline ID:${base} SM:${base} LB:lib_${base} PL:ILLUMINA PU:${base} \
        --runThreadN ${SLURM_CPUS_PER_TASK} \
        --runMode alignReads \
        --outSAMtype BAM Unsorted \

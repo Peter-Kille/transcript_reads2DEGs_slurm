@@ -20,7 +20,6 @@ cat $0
 module load ${fastqc_module}
 
 sample_array=($samples)
-
 base=${sample_array[$SLURM_ARRAY_TASK_ID]}
 
 fastqc -t 2 ${rawdir}/${base}_1.fastq.gz ${rawdir}/${base}_2.fastq.gz -o ${qcdir}

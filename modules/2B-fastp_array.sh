@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --nodes=1              # number of nodes to use
 #SBATCH --tasks-per-node=1     #
-#SBATCH --cpus-per-task=8      #   
-#SBATCH --mem-per-cpu=4000     # in megabytes, unless unit explicitly stated
+#SBATCH --cpus-per-task=4      #   
+#SBATCH --mem-per-cpu=1000     # in megabytes, unless unit explicitly stated
 
 echo "Some Usable Environment Variables:"
 echo "================================="
@@ -22,7 +22,17 @@ module load ${fastp_module}
 sample_array=($samples)
 base=${sample_array[$SLURM_ARRAY_TASK_ID]}
 
-fastp -q 20 -u 10 --cut_right \
+#fastp -i ${rawdir}/${base}_1.fastq.gz \
+#      -I ${rawdir}/${base}_2.fastq.gz \
+#      -o ${trimdir}/${base}_trim_1.fastq.gz \
+#      -O ${trimdir}/${base}_trim_2.fastq.gz \
+#      --trim_front1 9 --trim_front2 9 --max_len1 76 --max_len2 76 \
+#      -j ${trimdir}/${base}_trim.json \
+#      -h ${trimdir}/${base}_trim.html
+
+fastp --cut_front --cut_tail --cut_window_size 4 --cut_mean_quality 30 \
+      --qualified_quality_phred 30 --unqualified_percent_limit 30 \
+      --n_base_limit 5 --length_required 60 --detect_adapter_for_pe \
       -i ${rawdir}/${base}_1.fastq.gz \
       -I ${rawdir}/${base}_2.fastq.gz \
       -o ${trimdir}/${base}_trim_1.fastq.gz \

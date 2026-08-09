@@ -27,13 +27,13 @@ featureCounts \
         -T 4 -p -F GTF -t exon -g gene_id \
 	-a ${genomedir}/${annot} \
 	-o ${fcdir}/${base}.markdup.featurecount \
-	${markdir}/${base}.markdup.bam
+	${mapqcdir}/${base}.markdup.bam
 
 featureCounts \
 	-T 4 -p -F GTF -t exon -g gene_id \
 	-a ${genomedir}/${annot} \
 	-o ${fcdir}/${base}.rmdup.featurecount \
-	${markdir}/${base}.rmdup.bam
+	${mapqcdir}/${base}.rmdup.bam
 
 cp -R ${fcdir} ${outdir}/
 

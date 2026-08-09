@@ -18,8 +18,8 @@ echo "\$SLURM_MEM_PER_CPU=${SLURM_MEM_PER_CPU}"
 # Write jobscript to output file (good for reproducibility)
 cat $0
 
-module load ${r_module}
+module load ${apptainer_module}
 
-Rscript modules/scripts/Sartools-template-deseq2-dev.r
+apptainer exec --contain -B ${pipedir}:${pipedir} ${singularitydir}/${sartools} Rscript ${scriptdir}/Sartools-template-deseq2-dev.r
 
-cp -R ${rdir} ${outdir}/
+cp -R ${sartoolsdir} ${outdir}

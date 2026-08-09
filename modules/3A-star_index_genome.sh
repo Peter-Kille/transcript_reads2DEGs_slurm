@@ -2,7 +2,7 @@
 #SBATCH --nodes=1              # number of nodes to use
 #SBATCH --tasks-per-node=1     #
 #SBATCH --cpus-per-task=32      #
-#SBATCH --mem=128000     # in megabytes, unless unit explicitly stated
+#SBATCH --mem=100000     # in megabytes, unless unit explicitly stated
 
 echo "Some Usable Environment Variables:"
 echo "================================="
@@ -25,7 +25,7 @@ cp ${pipedir}/genome/* ${genomedir}/
 ## Change --sjdbOverhang to length of your sequence data (one read of your paired data) minus 1
 
 STAR 	--runThreadN ${SLURM_CPUS_PER_TASK} \
-        --limitGenomeGenerateRAM 128000000000 \
+        --limitGenomeGenerateRAM 100000000000 \
 	--runMode genomeGenerate \
 	--genomeDir  ${genomedir} \
 	--genomeFastaFiles ${genomedir}/${genome} \

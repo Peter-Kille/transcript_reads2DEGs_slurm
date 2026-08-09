@@ -29,5 +29,5 @@ done
 awk -F'\t' 'BEGIN { OFS="\t" }
 NR==1 { print $1, "Files", substr($0, index($0,$2)) }
 NR>1 { print $1, $1 ".markdup.featurecount", substr($0, index($0,$2)) }
-' ${sourcedir}/${metadata} > ${rdir}/${metadata}
+' ${sourcedir}/${metadata} > ${sartoolsdir}/${metadata}
 
