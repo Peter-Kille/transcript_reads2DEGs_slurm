@@ -47,7 +47,43 @@ export apptainer_module
 
 ### container ######
 
-sartools="r-sartools_1.8.2.sif"; [ -f "${singularitydir}/${sartools}" ] || curl -fsSL -o "${singularitydir}/${sartools}" "https://depot.galaxyproject.org/singularity/r-sartools:1.8.2--r44hdfd78af_0"
+#sartools="r-sartools_1.8.2.sif"; [ -f "${singularitydir}/${sartools}" ] || curl -fsSL -o "${singularitydir}/${sartools}" "https://depot.galaxyproject.org/singularity/r-sartools:1.8.2--r44hdfd78af_0"
+
+sartools="r-sartools_1.8.2.sif"
+url="https://depot.galaxyproject.org/singularity/r-sartools:1.8.2--r44hdfd78af_0"
+expected_sha256="fde03fa7d72287c9494751e39fd8f642c01ca9d5266ce68ca1b6538fcce9a474"
+target="${singularitydir}/${sartools}"
+
+verify_checksum() {
+    local actual
+    actual=$(sha256sum "$target" | awk '{print $1}')
+    [ "$actual" = "$expected_sha256" ]
+}
+
+# If file exists but is already corrupt, remove it so we re-download
+if [ -f "$target" ] && ! verify_checksum; then
+    echo "Existing file failed checksum, removing: $target"
+    rm -f "$target"
+fi
+
+max_attempts=5
+attempt=1
+while [ ! -f "$target" ] || ! verify_checksum; do
+    if [ "$attempt" -gt "$max_attempts" ]; then
+        echo "ERROR: failed to download $sartools with correct checksum after $max_attempts attempts" >&2
+        exit 1
+    fi
+    echo "Downloading $sartools (attempt $attempt/$max_attempts)..."
+    curl -fsSL -o "$target" "$url"
+    if verify_checksum; then
+        echo "Checksum OK."
+        break
+    else
+        echo "Checksum mismatch, retrying..."
+        rm -f "$target"
+    fi
+    attempt=$((attempt + 1))
+done
 
 export sartools
 
