@@ -5,8 +5,6 @@ source config/arguments_param
 source config/folders
 source config/programs
 
-exit
-
 ###### Step 1: Rename and count file
 sbatch -d singleton --error="${log}/1-preprocess_%J.err" --output="${log}/1-preprocess_%J.out" --job-name=${NAME} --partition=${PART} "${moduledir}/1-preprocess.sh"
 
