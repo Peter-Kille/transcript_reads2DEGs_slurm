@@ -34,7 +34,7 @@ sbatch -d singleton --error="${log}/2C-trimqc_%J.err" --output="${log}/2C-trimqc
 
 sbatch -d singleton --error="${log}/3A-star_index_%J.err" --output="${log}/3A-star_index_%J.out" --job-name=${NAME} --partition=${PART} "${moduledir}/3A-star_index_genome.sh"
 
-sbatch -d singleton --error="${log}/3B-star_map_%J.err" --output="${log}/3B-star_map_%J.out" --"array=0-${sample_number}%20" --job-name=${NAME} --partition=${PART} "${moduledir}/3B-star_mapping_array.sh"
+sbatch -d singleton --error="${log}/3B-star_map_%J.err" --output="${log}/3B-star_map_%J.out" --"array=0-${sample_number}%14" --job-name=${NAME} --partition=${PART} "${moduledir}/3B-star_mapping_array.sh"
 
 ###### Step 4: MapQC
 
