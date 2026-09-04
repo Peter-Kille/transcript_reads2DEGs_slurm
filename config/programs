@@ -8,7 +8,7 @@ module is-avail ${fastqc_module} || { echo "${fastqc_module} not avalible check 
 export fastqc_module
 
 # STEP 2B fastp trim
-fastp_module="fastp/1.3.3-GCC-15.2.0"
+fastp_module="fastp/1.3.6-GCC-15.2.0"
 module is-avail ${fastp_module} || { echo "${fastp_module} not avalible check config.parameters_all file" ; exit 1; }
 export fastp_module
 
