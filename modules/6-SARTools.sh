@@ -18,6 +18,9 @@ echo "\$SLURM_MEM_PER_CPU=${SLURM_MEM_PER_CPU}"
 # Write jobscript to output file (good for reproducibility)
 cat $0
 
+# copy featurecounts to outdir here (single job), not inside the step 5 array tasks
+cp -R ${fcdir} ${outdir}/
+
 module load ${apptainer_module}
 
 apptainer exec --contain -B ${pipedir}:${pipedir} ${singularitydir}/${sartools} Rscript ${scriptdir}/Sartools-template-deseq2-dev.r

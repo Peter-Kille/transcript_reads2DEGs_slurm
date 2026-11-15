@@ -22,5 +22,5 @@ module load ${multiqc_module}
 
 multiqc ${pipedir} --outdir ${multiqcdir}/
 
-mkdir "${outdir}/multiqc"
+mkdir -p "${outdir}/multiqc"
 cp -R ${multiqcdir}/* "${outdir}/multiqc/"

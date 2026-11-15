@@ -47,9 +47,28 @@ Options:
   -t, --treatment     REQUIRED: treatment for which to derive DEGs
   -r, --ref           REQUIRED: reference condition
   -w, --work          Optional: working dir - default is current dir /work/
-  -h, --help          Show this help message
+  -D, --driver-partition  Optional: partition for the driver job (default epyc_long)
+  -T, --driver-time   Optional: driver walltime (default 7-00:00:00)
+  -F, --foreground    Optional: run the stages in this shell instead of a driver job (use in tmux)
   -h, --help          Show this help message
 ```
+## How the run is controlled (v2: driver job, no singleton chain)
+
+`./deploy.sh` no longer submits every stage up front chained with `sbatch -d singleton`. It validates your options, then submits itself as a small **driver** job (1 CPU, 1 GB, default 7 days on `epyc_long`) and exits. The driver submits one stage at a time with `sbatch --wait`, so only the driver and the current stage are ever in the queue (this keeps array tasks within `MaxSubmitJobs`). The design follows the [metagenomic_slurm pipeline guide](https://github.com/Peter-Kille/metagenomic_slurm/blob/main/PIPELINE_GUIDE.md).
+
+```
+1-preprocess
+   -> [ 2A fastqc -> 2B fastp -> 2C trim fastqc ]  in parallel with  [ 3A STAR index ]
+   -> wait for both -> 3B STAR mapping -> 4 mapqc -> 5 featureCounts -> 6 SARTools -> X MultiQC
+```
+
+- **Done markers:** each finished stage writes `work/.done_<stage>`. If a stage fails the driver stops; fix the problem and run the *same* command again - finished stages print `SKIP`. To force a stage to rerun delete its marker and the markers of every later stage.
+- **Follow progress:** `tail -f work/0_log/0_driver_<jobid>.out` (lines read SUBMIT / DONE / SKIP / FAILED); stage logs are `work/0_log/<stage>_<jobid>.out/.err`.
+- **Cancel:** `scancel <driver_id>`, then `scancel -u $USER -n <NAME>` for the stage in flight (cancelling the driver does not stop the running stage).
+- **Command history:** every launch is appended to `work/0_log/0_execution_commandline.txt`.
+- **Debugging / tmux:** use `-F` to skip the driver and run the stages in the current shell.
+- Use a new `-n` name (and a clean `work/`) for a fresh run, otherwise done markers will skip stages you meant to repeat.
+- The previous singleton-based version is preserved as release **v1**.
  **Note:**
 - You can run the pipeline multiple times simultaneously with different raw reads, simply repeat the installation process in a different directory and `./deploy` with a different run names identifier name.
 - You can manually reconfigure slurm parameters as per your HPC system (e.g memory, CPUs) by going through indivudal scripts in `modules` directory.

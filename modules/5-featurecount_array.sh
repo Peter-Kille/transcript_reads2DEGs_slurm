@@ -35,5 +35,4 @@ featureCounts \
 	-o ${fcdir}/${base}.rmdup.featurecount \
 	${mapqcdir}/${base}.rmdup.bam
 
-cp -R ${fcdir} ${outdir}/
 
